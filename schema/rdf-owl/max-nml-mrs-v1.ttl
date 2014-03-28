@@ -231,7 +231,7 @@
             a   nml:LabelGroup;
             nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan>;
             nml:values "2-4094"];
-    nml:isAlias <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2:>.
+    nml:isAlias <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2>.
 
 <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8>
     a   nml:BidirectionalPort,

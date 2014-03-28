@@ -201,7 +201,7 @@
 								<nml:values>2-4094</nml:values>
 							</nml:LabelGroup>
 						</nml:hasLabelGroup>
-						<nml:isAlias rdf:resource="urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2:" />
+						<nml:isAlias rdf:resource="urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2" />
 					</nml:BidirectionalPort>
 				</nml:hasBidirectionalPort>
 				<nml:hasBidirectionalPort>
