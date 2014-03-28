@@ -251,14 +251,14 @@
             nml:values "11"];
     nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0>.
             
-<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9>
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10>
     a   nml:BidirectionalPort,
         owl:NamedIndividual;
     nml:hasLabelGroup [
             a   nml:LabelGroup;
             nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan>;
             nml:values "11"];
-    nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0>.
+    nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0>.
 
 
 <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service>
@@ -426,9 +426,13 @@
     nml:hasService <urn:ogf:network:ipnet.maxgigapop.net:2013:routing-service>.
 
 
-<urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1>
+<urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0>
     a   nml:BidirectionalPort,
         owl:NamedIndividual;
+    nml:hasLabelGroup [
+            a   nml:LabelGroup;
+            nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan>;
+            nml:values "11,313,314"];
     nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6>.
 
 

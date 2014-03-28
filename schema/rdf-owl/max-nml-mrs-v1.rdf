@@ -178,7 +178,18 @@
 								<nml:values>11,313,314</nml:values>
 							</nml:LabelGroup>
 						</nml:hasLabelGroup>
-						<nml:isAlias rdf:resource="urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0" />
+						<nml:isAlias>
+							<nml:BidirectionalPort rdf:about="urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0">
+								<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+								<nml:hasLabelGroup>
+									<nml:LabelGroup>
+										<nml:labeltype rdf:resource="http://schemas.ogf.org/nml/2012/10/ethernet#vlan" />
+										<nml:values>11,313,314</nml:values>
+									</nml:LabelGroup>
+								</nml:hasLabelGroup>
+								<nml:isAlias rdf:resource="urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6" />
+							</nml:BidirectionalPort>
+						</nml:isAlias>
 					</nml:BidirectionalPort>
 				</nml:hasBidirectionalPort>
 				<nml:hasBidirectionalPort>
@@ -237,7 +248,10 @@
 								<nml:isAlias rdf:resource="urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9" />
 							</nml:BidirectionalPort>
 						</nml:isAlias>
-						<rdf:type rdf:resource="http://schemas.ogf.org/nml/2013/03/base#BidirectionalPort" />
+					</nml:BidirectionalPort>
+				</nml:hasBidirectionalPort>
+				<nml:hasBidirectionalPort>
+					<nml:BidirectionalPort rdf:about="urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10">
 						<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
 						<nml:hasLabelGroup>
 							<nml:LabelGroup>
@@ -245,10 +259,20 @@
 								<nml:values>11</nml:values>
 							</nml:LabelGroup>
 						</nml:hasLabelGroup>
-						<nml:isAlias rdf:resource="urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0" />
+						<nml:isAlias>
+							<nml:BidirectionalPort rdf:about="urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0">
+								<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+								<nml:hasLabelGroup>
+									<nml:LabelGroup>
+										<nml:labeltype rdf:resource="http://schemas.ogf.org/nml/2012/10/ethernet#vlan" />
+										<nml:values>11</nml:values>
+									</nml:LabelGroup>
+								</nml:hasLabelGroup>
+								<nml:isAlias rdf:resource="urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10" />
+							</nml:BidirectionalPort>
+						</nml:isAlias>
 					</nml:BidirectionalPort>
 				</nml:hasBidirectionalPort>
-				<nml:hasBidirectionalPort rdf:resource="urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10" />
 				<nml:hasService>
 					<nml:SwitchingService rdf:about="urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service">
 						<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
@@ -281,18 +305,7 @@
 				<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
 				<nml:hasBidirectionalPort rdf:resource="urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0" />
 				<nml:hasBidirectionalPort rdf:resource="urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0" />
-				<nml:hasBidirectionalPort>
-					<nml:BidirectionalPort rdf:about="urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0">
-						<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
-						<nml:hasLabelGroup>
-							<nml:LabelGroup>
-								<nml:labeltype rdf:resource="http://schemas.ogf.org/nml/2012/10/ethernet#vlan" />
-								<nml:values>11</nml:values>
-							</nml:LabelGroup>
-						</nml:hasLabelGroup>
-						<nml:isAlias rdf:resource="urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10" />
-					</nml:BidirectionalPort>
-				</nml:hasBidirectionalPort>
+				<nml:hasBidirectionalPort rdf:resource="urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0" />
 				<nml:hasService>
 					<mrs:StorageService rdf:about="urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service">
 						<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
@@ -357,9 +370,6 @@
 						<nml:values>550-569,3020-3030,3100-3109,3200-3219</nml:values>
 					</nml:LabelGroup>
 				</nml:hasLabelGroup>
-				<rdf:type rdf:resource="http://schemas.ogf.org/nml/2013/03/base#BidirectionalPort" />
-				<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
-				<nml:isAlias rdf:resource="urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6" />
 			</nml:BidirectionalPort>
 		</nml:hasBidirectionalPort>
 		<nml:hasService>

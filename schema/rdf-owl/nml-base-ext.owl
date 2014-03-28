@@ -267,6 +267,7 @@
     <!-- http://schemas.ogf.org/nml/2013/03/base#isAlias -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/nml/2013/03/base#isAlias">
+        <rdf:type rdf:resource="http://schemas.ogf.org/nml/2013/03/base#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
         <rdfs:range rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
     </owl:ObjectProperty>
