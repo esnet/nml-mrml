@@ -18,7 +18,10 @@
         owl:NamedIndividual;
     nml:hasNode
         <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1>,
-        <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4> .
+        <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4>,
+        <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw>,
+        <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509>,
+        <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph>.
 
 
 <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1>
@@ -198,7 +201,9 @@
         <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8>,
         <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9>,
         <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10>;
-    nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:routing-service>.
+    nml:hasService 
+        <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service>,
+        <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:routing-service>.
                                 
 
 <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4>
