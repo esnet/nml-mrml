@@ -39,15 +39,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#IpAddress -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#Address -->
 
-    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#IpAddress">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>  
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</owl:cardinality>
-           </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Address">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/> 
     </owl:Class>
     
 
@@ -172,7 +167,7 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#IpAddress"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Address"/>
                      <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#Port"/>
                      <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#PortGroup"/>
                      <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#BidirectionalPort"/>
@@ -255,7 +250,7 @@
 
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasBenchmark -->
 
-    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasBidirectionalPort">
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasBenchmark">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -288,7 +283,14 @@
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#prefix -->
 
     <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#prefix">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Address"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
