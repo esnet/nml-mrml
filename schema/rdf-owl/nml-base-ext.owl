@@ -273,6 +273,19 @@
     </owl:ObjectProperty>
     
 
+    <!-- http://schemas.ogf.org/nml/2013/03/base#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/nml/2013/03/base#belongsTo">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/nml/2013/03/base#serviceProvidedBy -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/nml/2013/03/base#serviceProvidedBy">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:ObjectProperty>
 
     <!-- http://schemas.ogf.org/nml/2013/03/base#isSerialCompoundLink -->
 
