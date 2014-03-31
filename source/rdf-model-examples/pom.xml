@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.apache.jena</groupId>
+    <artifactId>rains-ontmodel</artifactId>
+    <version>1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>Example of manipulating Jena models with NML-MRS onology</name>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>onejar-maven-plugin.googlecode.com</id>
+            <url>http://onejar-maven-plugin.googlecode.com/svn/mavenrepo</url>
+        </pluginRepository>
+        <pluginRepository>
+          <id>Codehaus Snapshots</id>
+          <url>http://nexus.codehaus.org/snapshots/</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled> 
+         </releases>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.5</version>
+        </dependency>
+        <dependency>
+	    <groupId>org.apache.jena</groupId>
+	    <artifactId>jena-core</artifactId>
+	    <version>2.10.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>jena-arq</artifactId>
+            <version>2.10.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>jena-tdb</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.4</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.ansell.pellet</groupId>
+            <artifactId>pellet-common</artifactId>
+            <version>2.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.ansell.pellet</groupId>
+            <artifactId>pellet-jena</artifactId>
+            <version>2.3.3</version>
+        </dependency>
+    </dependencies>
+    <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>add-nml-ontology-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>jena.schemagen</mainClass>
+              <commandlineArgs>
+                --inference \
+                -i ${basedir}/src/main/resources/nml-base-ext.owl \
+                --package net.maxgigapop.www.rains.ontmodel \
+                -o ${basedir}/src/main/java/net/maxgigapop/www/rains/ontmodel \
+                -n Nml
+              </commandlineArgs>
+            </configuration>
+          </execution>
+          <execution>
+            <id>add-mrs-ontology-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>jena.schemagen</mainClass>
+              <commandlineArgs>
+                --inference \
+                -i ${basedir}/src/main/resources/nml-mrs-ext.owl \
+                --package net.maxgigapop.www.rains.ontmodel \
+                -o ${basedir}/src/main/java/net/maxgigapop/www/rains/ontmodel \
+                -n NmlMrs
+              </commandlineArgs>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>add-source</id>
+            <goals>
+              <goal>add-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>${basedir}/src/main/java/net/maxgigapop/www/rains/ontmodel</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    </build>
+</project>
