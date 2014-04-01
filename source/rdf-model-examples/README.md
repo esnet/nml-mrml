@@ -1,8 +1,8 @@
 ### Compile and run the demo programs
 
     mvn clean install
-    java -cp lib/*:target/rains-ontmodel-1-SNAPSHOT.jar net.maxgigapop.www.rains.ontmodel.OwlSchemaTest1
-    java -cp lib/*:target/rains-ontmodel-1-SNAPSHOT.jar net.maxgigapop.www.rains.ontmodel.InfModelTest1 
+    java -cp lib/*:target/rains-ontmodel-1-SNAPSHOT.jar net.maxgigapop.www.rains.ontmodel.pelletReasonerTest1
+    java -cp lib/*:target/rains-ontmodel-1-SNAPSHOT.jar net.maxgigapop.www.rains.ontmodel.modelTransformTest1 
 
 ### A brief Terse RDF Triple Language (TURTLE) tutorial
 http://haystack.csail.mit.edu/blog/2008/11/06/a-quick-tutorial-on-the-tutrle-rdf-serialization/
