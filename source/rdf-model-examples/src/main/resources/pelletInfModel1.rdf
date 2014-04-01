@@ -1,0 +1,1591 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nml:     <http://schemas.ogf.org/nml/2013/03/base#> .
+@prefix mrs:     <http://schemas.ogf.org/mrs/2013/12/topology#> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b1 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b2 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> .
+
+_:b3  a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b3 .
+
+_:b4  a       owl:Thing , mrs:Address ;
+      mrs:prefix "0.0.0.0/0"^^xsd:string ;
+      owl:sameAs _:b4 .
+
+mrs:POSIX_IOBenchmark
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:POSIX_IOBenchmark ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:POSIX_IOBenchmark .
+
+_:b5  a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b5 .
+
+mrs:capacity
+      a       owl:DatatypeProperty ;
+      rdfs:domain mrs:GenericCapabilityService ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf owl:topDataProperty , mrs:capacity ;
+      owl:equivalentProperty
+              mrs:capacity ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:end , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , mrs:maximum_iops_4kb_write , owl:bottomDataProperty , nml:version , nml:start , mrs:latency_usec , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:average_iops_4kb_write , mrs:burst_size_byte , nml:alt , mrs:maximum_object_size , mrs:memory_mb , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:maximum_iops_4kb_read .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public>
+      a       nml:NetworkObject , owl:Thing , nml:BidirectionalPort , nml:Group ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> .
+
+_:b1  a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b1 .
+
+mrs:capability
+      a       owl:DatatypeProperty ;
+      rdfs:domain mrs:GenericCapabilityService ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf mrs:capability , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:capability ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:end , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , mrs:maximum_iops_4kb_write , owl:bottomDataProperty , nml:version , nml:start , mrs:latency_usec , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:average_iops_4kb_write , mrs:burst_size_byte , nml:alt , mrs:maximum_object_size , mrs:memory_mb , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:maximum_iops_4kb_read .
+
+nml:hasPort
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:Group ;
+      rdfs:range _:b6 ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:hasPort ;
+      owl:equivalentProperty
+              nml:hasPort ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+mrs:GenericCapabilityService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:GenericCapabilityService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:GenericCapabilityService .
+
+mrs:providedByService
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range nml:Service ;
+      rdfs:subPropertyOf owl:topObjectProperty , mrs:providedByService ;
+      owl:equivalentProperty
+              mrs:providedByService ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:hasBidirectionalPort
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range nml:BidirectionalPort ;
+      rdfs:subPropertyOf nml:hasBidirectionalPort , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:hasBidirectionalPort ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:Location
+      a       owl:Class ;
+      rdfs:subClassOf nml:Location , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:Location .
+
+mrs:prefix
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b7 ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf mrs:prefix , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:prefix ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:end , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , mrs:maximum_iops_4kb_write , owl:bottomDataProperty , nml:version , nml:start , mrs:latency_usec , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:average_iops_4kb_write , mrs:burst_size_byte , nml:alt , mrs:maximum_object_size , mrs:memory_mb , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:maximum_iops_4kb_read .
+
+mrs:Address
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing , mrs:Address ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:Address .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> .
+
+nml:hasInboundPort
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range _:b8 ;
+      rdfs:subPropertyOf nml:hasInboundPort , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:hasInboundPort ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:SwitchingService , nml:Service ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b9 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0> .
+
+nml:BidirectionalLink
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:BidirectionalLink , nml:Group ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:BidirectionalLink .
+
+nml:noReturnTraffic
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:Link ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf nml:noReturnTraffic , owl:topDataProperty ;
+      owl:equivalentProperty
+              nml:noReturnTraffic ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:name , nml:value , mrs:capacity , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:burst_size_byte , nml:alt , mrs:capability , mrs:memory_mb , mrs:localAddress , mrs:maximum_iops_4kb_read , nml:values , nml:end , mrs:prefix , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , nml:parameter , mrs:maximum_iops_4kb_write , nml:unlocode , nml:version , owl:bottomDataProperty , nml:start , mrs:latency_usec , mrs:average_iops_4kb_write , mrs:maximum_object_size , nml:lat .
+
+_:b10
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:BlockStorageService mrs:ObjectStorageService mrs:Volume mrs:Bucket) .
+
+_:b11
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b11 .
+
+mrs:nextHop
+      a       owl:ObjectProperty ;
+      rdfs:domain mrs:Route ;
+      rdfs:range _:b12 ;
+      rdfs:subPropertyOf owl:topObjectProperty , mrs:nextHop ;
+      owl:equivalentProperty
+              mrs:nextHop ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b13
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b13 .
+
+_:b14
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Port nml:PortGroup nml:BidirectionalPort) .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:Service , mrs:IOPerformanceMeasurementService ;
+      mrs:providesBenchmark
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service> .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:routing-service>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , mrs:RoutingService , nml:Service ;
+      mrs:localAddress "206.196.177.248/26" ;
+      mrs:providesRoute <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:route-to-wan> ;
+      owl:sameAs <urn:ogf:network:ipnet.maxgigapop.net:2013:routing-service> .
+
+nml:hasLabel
+      a       owl:ObjectProperty ;
+      rdfs:domain _:b15 ;
+      rdfs:range nml:Label ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:hasLabel ;
+      owl:equivalentProperty
+              nml:hasLabel ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:SwitchingService , nml:Service ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> , <urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1> , <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      owl:sameAs <urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1> .
+
+_:b16
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:VirtualSwitchService mrs:HypervisorBypassInterfaceService mrs:ClusterNetworkService) .
+
+owl:bottomObjectProperty
+      a       owl:ObjectProperty , owl:IrreflexiveProperty , owl:AsymmetricProperty , owl:SymmetricProperty ;
+      rdfs:domain nml:Location , mrs:Route , nml:Node , mrs:Volume , nml:Label , mrs:IOPerformanceMeasurementService , nml:Group , mrs:Bucket , nml:NetworkObject , nml:LabelGroup , nml:BidirectionalLink , nml:Topology , mrs:HypervisorService , mrs:BlockStorageService , mrs:ObjectStorageService , nml:ListItem , nml:BidirectionalPort , mrs:RoutingService , nml:Service , mrs:HypervisorBypassInterfaceService , nml:Lifetime ;
+      rdfs:range nml:Location , mrs:Route , nml:Node , mrs:Volume , nml:Label , mrs:IOPerformanceMeasurementService , nml:Group , mrs:Bucket , nml:NetworkObject , nml:LabelGroup , nml:BidirectionalLink , nml:Topology , mrs:HypervisorService , mrs:BlockStorageService , mrs:ObjectStorageService , nml:ListItem , nml:BidirectionalPort , mrs:RoutingService , nml:Service , mrs:HypervisorBypassInterfaceService , nml:Lifetime ;
+      rdfs:subPropertyOf nml:locatedAt , nml:providesPort , nml:providesLink , nml:serviceProvidedBy , nml:hasLink , nml:hasLabel , nml:isAlias , mrs:providesRoute , mrs:providesVNic , nml:adaptationFunction , nml:hasNode , nml:next , owl:bottomObjectProperty , owl:topObjectProperty , nml:hasPort , nml:belongsTo , nml:isSink , nml:hasBidirectionalLink , nml:item , mrs:providedByService , nml:isSource , nml:hasTopology , nml:hasBidirectionalPort , mrs:hasBenchmark , mrs:providesBenchmark , nml:isSerialCompoundLink , nml:hasLabelGroup , nml:address , nml:labeltype , nml:hasInboundPort , nml:hasOutboundPort , nml:hasService , nml:encoding , nml:existsDuring , mrs:providesVM , nml:canProvidePort , mrs:providesBucket , nml:implementedBy , mrs:nextHop , mrs:providesVolume ;
+      owl:equivalentProperty
+              owl:bottomObjectProperty ;
+      owl:propertyDisjointWith
+              nml:locatedAt , nml:providesPort , nml:providesLink , nml:serviceProvidedBy , nml:hasLink , nml:hasLabel , nml:isAlias , mrs:providesRoute , mrs:providesVNic , nml:adaptationFunction , nml:hasNode , nml:next , owl:bottomObjectProperty , owl:topObjectProperty , nml:hasPort , nml:belongsTo , nml:isSink , nml:hasBidirectionalLink , nml:item , mrs:providedByService , nml:isSource , nml:hasTopology , nml:hasBidirectionalPort , mrs:hasBenchmark , mrs:providesBenchmark , nml:isSerialCompoundLink , nml:hasLabelGroup , nml:address , nml:labeltype , nml:hasInboundPort , nml:hasOutboundPort , nml:hasService , nml:encoding , nml:existsDuring , mrs:providesVM , nml:canProvidePort , mrs:providesBucket , nml:implementedBy , mrs:nextHop , mrs:providesVolume .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2>
+      a       nml:NetworkObject , owl:Thing , nml:BidirectionalPort , nml:Group ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2> .
+
+_:b17
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:VirtualSwitchService mrs:HypervisorBypassInterfaceService mrs:ClusterNetworkService) .
+
+mrs:VirtualSwitchService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:VirtualSwitchService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:VirtualSwitchService .
+
+owl:topObjectProperty
+      a       owl:TransitiveProperty , owl:ObjectProperty , owl:SymmetricProperty , owl:ReflexiveProperty ;
+      rdfs:subPropertyOf owl:topObjectProperty ;
+      owl:equivalentProperty
+              owl:topObjectProperty ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b18 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:topology>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:Topology , nml:Group ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0> ;
+      nml:hasService <urn:ogf:network:ipnet.maxgigapop.net:2013:routing-service> ;
+      owl:sameAs <urn:ogf:network:ipnet.maxgigapop.net:2013:topology> .
+
+_:b19
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Port nml:PortGroup) .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b20 ;
+      owl:sameAs <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3> .
+
+mrs:maximum_iops_4kb_read
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b21 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf owl:topDataProperty , mrs:maximum_iops_4kb_read ;
+      owl:equivalentProperty
+              mrs:maximum_iops_4kb_read ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+_:b22
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b22 .
+
+mrs:disk_gb
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b23 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf mrs:disk_gb , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:disk_gb ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+_:b24
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Group ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:LinkGroup nml:PortGroup nml:BidirectionalPort nml:BidirectionalLink) .
+
+nml:Node
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Node ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:Node .
+
+nml:version
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range xsd:dateTime ;
+      rdfs:subPropertyOf owl:topDataProperty , nml:version ;
+      owl:equivalentProperty
+              nml:version ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:name , nml:value , mrs:capacity , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:burst_size_byte , nml:alt , mrs:capability , mrs:memory_mb , nml:labelSwapping , mrs:localAddress , mrs:maximum_iops_4kb_read , nml:values , mrs:prefix , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , nml:parameter , mrs:maximum_iops_4kb_write , nml:unlocode , owl:bottomDataProperty , mrs:latency_usec , mrs:average_iops_4kb_write , mrs:maximum_object_size , nml:lat , nml:noReturnTraffic .
+
+nml:address
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:Location ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:address ;
+      owl:equivalentProperty
+              nml:address ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+mrs:latency_usec
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b25 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf mrs:latency_usec , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:latency_usec ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> .
+
+mrs:providesVolume
+      a       owl:ObjectProperty ;
+      rdfs:domain mrs:BlockStorageService ;
+      rdfs:range mrs:Volume ;
+      rdfs:subPropertyOf owl:topObjectProperty , mrs:providesVolume ;
+      owl:equivalentProperty
+              mrs:providesVolume ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+mrs:average_rate_kbps
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b26 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf mrs:average_rate_kbps , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:average_rate_kbps ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+_:b27
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Location nml:NetworkObject) .
+
+nml:providesPort
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:Service ;
+      rdfs:range _:b28 ;
+      rdfs:subPropertyOf nml:providesPort , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:providesPort ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:serviceProvidedBy
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:Service ;
+      rdfs:range nml:NetworkObject ;
+      rdfs:subPropertyOf nml:serviceProvidedBy , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:serviceProvidedBy ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:switching-service>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:SwitchingService , nml:Service ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:switching-service> .
+
+nml:hasLink
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:Group ;
+      rdfs:range _:b29 ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:hasLink ;
+      owl:equivalentProperty
+              nml:hasLink ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b30
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (<http://schemas.ogf.org/nml/2013/12/topology#POSIX_IOBenchmark> <http://schemas.ogf.org/nml/2013/12/topology#S3_IOBenchmark>) .
+
+nml:long
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:Location ;
+      rdfs:range xsd:float ;
+      rdfs:subPropertyOf nml:long , owl:topDataProperty ;
+      owl:equivalentProperty
+              nml:long ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:name , nml:value , mrs:capacity , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:burst_size_byte , mrs:capability , mrs:memory_mb , nml:labelSwapping , mrs:localAddress , mrs:maximum_iops_4kb_read , nml:values , nml:end , mrs:prefix , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , nml:parameter , mrs:maximum_iops_4kb_write , nml:unlocode , nml:version , owl:bottomDataProperty , nml:start , mrs:latency_usec , mrs:average_iops_4kb_write , mrs:maximum_object_size , nml:noReturnTraffic .
+
+nml:next
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:ListItem ;
+      rdfs:range nml:ListItem ;
+      rdfs:subPropertyOf nml:next , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:next ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:AdaptationService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , nml:AdaptationService , owl:Thing , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:AdaptationService .
+
+mrs:StorageService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:StorageService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:StorageService .
+
+mrs:HypervisorBypassInterfaceService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:HypervisorBypassInterfaceService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:HypervisorBypassInterfaceService .
+
+nml:hasTopology
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range nml:Topology ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:hasTopology ;
+      owl:equivalentProperty
+              nml:hasTopology ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+mrs:hasBenchmark
+      a       owl:ObjectProperty ;
+      rdfs:domain _:b10 ;
+      rdfs:range _:b31 ;
+      rdfs:subPropertyOf mrs:hasBenchmark , owl:topObjectProperty ;
+      owl:equivalentProperty
+              mrs:hasBenchmark ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b15
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Link nml:Port nml:BidirectionalPort nml:BidirectionalLink) .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b32 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:Node ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:sriov-vm-fex>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:Service , mrs:HypervisorBypassInterfaceService ;
+      mrs:providesVNic <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:sriov-vm-fex> .
+
+_:b6  a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Port nml:PortGroup) .
+
+nml:unlocode
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:Location ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf owl:topDataProperty , nml:unlocode ;
+      owl:equivalentProperty
+              nml:unlocode ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:end , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , mrs:maximum_iops_4kb_write , owl:bottomDataProperty , nml:version , nml:start , mrs:latency_usec , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:average_iops_4kb_write , mrs:burst_size_byte , nml:alt , mrs:maximum_object_size , mrs:memory_mb , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:maximum_iops_4kb_read .
+
+nml:NetworkObject
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:NetworkObject .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b33 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> .
+
+nml:encoding
+      a       owl:ObjectProperty ;
+      rdfs:domain _:b34 ;
+      rdfs:subPropertyOf nml:encoding , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:encoding ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+mrs:BlockStorageService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:BlockStorageService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:BlockStorageService .
+
+nml:existsDuring
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range nml:Lifetime ;
+      rdfs:subPropertyOf nml:existsDuring , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:existsDuring ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b35
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:VirtualSwitchService mrs:HypervisorBypassInterfaceService mrs:ClusterNetworkService) .
+
+mrs:providesVM
+      a       owl:ObjectProperty ;
+      rdfs:domain mrs:HypervisorService ;
+      rdfs:range nml:Node ;
+      rdfs:subPropertyOf mrs:providesVM , owl:topObjectProperty ;
+      owl:equivalentProperty
+              mrs:providesVM ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:Node ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:routing-service> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> .
+
+nml:DeadaptationService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:DeadaptationService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:DeadaptationService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:Node ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-nova> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:sriov-vm-fex> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> .
+
+nml:SwitchingService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:SwitchingService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:SwitchingService .
+
+_:b36
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "550-569,3020-3030,3100-3109,3200-3219"^^xsd:string ;
+      owl:sameAs _:b36 .
+
+nml:value
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:Label ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf owl:topDataProperty , nml:value ;
+      owl:equivalentProperty
+              nml:value ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:end , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , mrs:maximum_iops_4kb_write , owl:bottomDataProperty , nml:version , nml:start , mrs:latency_usec , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:average_iops_4kb_write , mrs:burst_size_byte , nml:alt , mrs:maximum_object_size , mrs:memory_mb , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:maximum_iops_4kb_read .
+
+mrs:Volume
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:Volume ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:Volume .
+
+<http://www.maxgigapop.net/mrs/2013/topology#>
+      a       owl:Ontology ;
+      rdfs:label "NML-MRS Description of the MAX Research Infrastructure" .
+
+nml:hasNode
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range nml:Node ;
+      rdfs:subPropertyOf nml:hasNode , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:hasNode ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b7  a       owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:Route mrs:Address) .
+
+mrs:burst_size_byte
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b16 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf mrs:burst_size_byte , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:burst_size_byte ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+mrs:memory_mb
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b37 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf mrs:memory_mb , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:memory_mb ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+nml:labelSwapping
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:SwitchingService ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf nml:labelSwapping , owl:topDataProperty ;
+      owl:equivalentProperty
+              nml:labelSwapping ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:name , nml:value , mrs:capacity , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:burst_size_byte , nml:alt , mrs:capability , mrs:memory_mb , mrs:localAddress , mrs:maximum_iops_4kb_read , nml:values , nml:end , mrs:prefix , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , nml:parameter , mrs:maximum_iops_4kb_write , nml:unlocode , nml:version , owl:bottomDataProperty , nml:start , mrs:latency_usec , mrs:average_iops_4kb_write , mrs:maximum_object_size , nml:lat .
+
+_:b26
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:VirtualSwitchService mrs:HypervisorBypassInterfaceService mrs:ClusterNetworkService) .
+
+_:b8  a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Port nml:PortGroup) .
+
+nml:BidirectionalPort
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:BidirectionalPort , nml:Group ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:BidirectionalPort .
+
+nml:isSink
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range _:b38 ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:isSink ;
+      owl:equivalentProperty
+              nml:isSink ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:hasBidirectionalLink
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:Group ;
+      rdfs:range nml:BidirectionalLink ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:hasBidirectionalLink ;
+      owl:equivalentProperty
+              nml:hasBidirectionalLink ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+owl:Nothing
+      a       owl:Class ;
+      rdfs:subClassOf nml:SwitchingService , mrs:POSIX_IOBenchmark , mrs:Volume , nml:Label , nml:Group , nml:AdaptationService , <http://schemas.ogf.org/nml/2013/12/topology#S3_IOBenchmark> , mrs:StorageService , mrs:VirtualSwitchService , nml:BidirectionalPort , mrs:ClusterNetworkService , mrs:GenericCapabilityService , owl:Nothing , mrs:RoutingService , nml:PortGroup , <http://schemas.ogf.org/nml/2013/12/topology#POSIX_IOBenchmark> , nml:Service , nml:LinkGroup , mrs:HypervisorBypassInterfaceService , nml:Location , mrs:Route , mrs:Address , nml:Node , mrs:IOPerformanceMeasurementService , nml:NetworkObject , mrs:Bucket , nml:LabelGroup , owl:Thing , nml:Port , nml:Topology , mrs:HypervisorService , nml:BidirectionalLink , mrs:BlockStorageService , mrs:ObjectStorageService , nml:ListItem , mrs:S3_IOBenchmark , nml:Link , nml:DeadaptationService , nml:Lifetime ;
+      owl:complementOf owl:Thing ;
+      owl:disjointWith nml:SwitchingService , mrs:POSIX_IOBenchmark , mrs:Volume , nml:Label , nml:Group , nml:AdaptationService , <http://schemas.ogf.org/nml/2013/12/topology#S3_IOBenchmark> , mrs:StorageService , mrs:VirtualSwitchService , nml:BidirectionalPort , mrs:ClusterNetworkService , mrs:GenericCapabilityService , mrs:RoutingService , owl:Nothing , nml:PortGroup , <http://schemas.ogf.org/nml/2013/12/topology#POSIX_IOBenchmark> , nml:Service , nml:LinkGroup , mrs:HypervisorBypassInterfaceService , nml:Location , mrs:Route , mrs:Address , nml:Node , mrs:IOPerformanceMeasurementService , nml:NetworkObject , mrs:Bucket , nml:LabelGroup , owl:Thing , nml:Port , nml:Topology , mrs:HypervisorService , nml:BidirectionalLink , mrs:BlockStorageService , mrs:ObjectStorageService , nml:ListItem , mrs:S3_IOBenchmark , nml:Link , nml:DeadaptationService , nml:Lifetime ;
+      owl:equivalentClass owl:Nothing .
+
+nml:Service
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:Service .
+
+_:b28
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Port nml:PortGroup) .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , mrs:VirtualSwitchService , nml:Service ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:ovs> ;
+      nml:providesPort <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron> .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b39 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> ;
+      owl:sameAs <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0> .
+
+_:b39
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11,313,314"^^xsd:string ;
+      owl:sameAs _:b39 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-nova>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , mrs:HypervisorService , nml:Service ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-nova> .
+
+mrs:num_core
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b40 ;
+      rdfs:range xsd:int ;
+      rdfs:subPropertyOf mrs:num_core , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:num_core ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+_:b41
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Link nml:LinkGroup) .
+
+mrs:Bucket
+      a       owl:Class ;
+      rdfs:subClassOf mrs:Bucket , nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:Bucket .
+
+_:b34
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Link nml:LinkGroup nml:Port nml:PortGroup nml:BidirectionalPort nml:SwitchingService) .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b3 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12> .
+
+mrs:maximum_object_size
+      a       owl:DatatypeProperty ;
+      rdfs:domain mrs:Bucket ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf mrs:maximum_object_size , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:maximum_object_size ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:topology>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:Topology , nml:Group ;
+      nml:hasNode <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:topology> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:ovs>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:SwitchingService , nml:Service ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:ovs> .
+
+_:b42
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Port nml:PortGroup nml:BidirectionalPort) .
+
+_:b29
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Link nml:LinkGroup) .
+
+mrs:  a       owl:Ontology ;
+      rdfs:label "The Multi-Resource Service (MRS) extension of NML Schema" .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b22 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , mrs:StorageService , nml:Service ;
+      mrs:disk_gb "110592"^^xsd:long ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service> .
+
+mrs:providesVNic
+      a       owl:ObjectProperty ;
+      rdfs:domain mrs:HypervisorBypassInterfaceService ;
+      rdfs:range _:b42 ;
+      rdfs:subPropertyOf mrs:providesVNic , owl:topObjectProperty ;
+      owl:equivalentProperty
+              mrs:providesVNic ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b40
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:HypervisorService mrs:StorageService mrs:BlockStorageService mrs:ObjectStorageService) .
+
+nml:adaptationFunction
+      a       owl:ObjectProperty ;
+      rdfs:domain _:b43 ;
+      rdfs:subPropertyOf nml:adaptationFunction , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:adaptationFunction ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+mrs:line_rate_kbps
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b35 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf mrs:line_rate_kbps , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:line_rate_kbps ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+mrs:peak_rate_kbps
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b17 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf mrs:peak_rate_kbps , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:peak_rate_kbps ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:Node ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:switching-service> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> .
+
+mrs:localAddress
+      a       owl:DatatypeProperty ;
+      rdfs:domain mrs:RoutingService ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf owl:topDataProperty , mrs:localAddress ;
+      owl:equivalentProperty
+              mrs:localAddress ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:end , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , mrs:maximum_iops_4kb_write , owl:bottomDataProperty , nml:version , nml:start , mrs:latency_usec , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:average_iops_4kb_write , mrs:burst_size_byte , nml:alt , mrs:maximum_object_size , mrs:memory_mb , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:maximum_iops_4kb_read .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b44 ;
+      nml:isAlias <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> .
+
+nml:end
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:Lifetime ;
+      rdfs:range xsd:dateTime ;
+      rdfs:subPropertyOf nml:end , owl:topDataProperty ;
+      owl:equivalentProperty
+              nml:end ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:name , nml:value , mrs:capacity , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:burst_size_byte , nml:alt , mrs:capability , mrs:memory_mb , nml:labelSwapping , mrs:localAddress , mrs:maximum_iops_4kb_read , nml:values , mrs:prefix , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , nml:parameter , mrs:maximum_iops_4kb_write , nml:unlocode , owl:bottomDataProperty , mrs:latency_usec , mrs:average_iops_4kb_write , mrs:maximum_object_size , nml:lat , nml:noReturnTraffic .
+
+<http://schemas.ogf.org/nml/2012/10/ethernet#vlan>
+      a       owl:Thing ;
+      owl:sameAs <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> .
+
+nml:start
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:Lifetime ;
+      rdfs:range xsd:dateTime ;
+      rdfs:subPropertyOf owl:topDataProperty , nml:start ;
+      owl:equivalentProperty
+              nml:start ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:name , nml:value , mrs:capacity , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:burst_size_byte , nml:alt , mrs:capability , mrs:memory_mb , nml:labelSwapping , mrs:localAddress , mrs:maximum_iops_4kb_read , nml:values , mrs:prefix , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , nml:parameter , mrs:maximum_iops_4kb_write , nml:unlocode , owl:bottomDataProperty , mrs:latency_usec , mrs:average_iops_4kb_write , mrs:maximum_object_size , nml:lat , nml:noReturnTraffic .
+
+_:b38
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Link nml:LinkGroup) .
+
+nml:hasService
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range nml:Service ;
+      rdfs:subPropertyOf nml:hasService , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:hasService ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+mrs:average_iops_4kb_write
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b45 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf mrs:average_iops_4kb_write , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:average_iops_4kb_write ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+nml:Port
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , nml:Port , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:Port .
+
+mrs:HypervisorService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:HypervisorService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:HypervisorService .
+
+nml:lat
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:Location ;
+      rdfs:range xsd:float ;
+      rdfs:subPropertyOf nml:lat , owl:topDataProperty ;
+      owl:equivalentProperty
+              nml:lat ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:name , nml:value , mrs:capacity , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:burst_size_byte , mrs:capability , mrs:memory_mb , nml:labelSwapping , mrs:localAddress , mrs:maximum_iops_4kb_read , nml:values , nml:end , mrs:prefix , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , nml:parameter , mrs:maximum_iops_4kb_write , nml:unlocode , nml:version , owl:bottomDataProperty , nml:start , mrs:latency_usec , mrs:average_iops_4kb_write , mrs:maximum_object_size , nml:noReturnTraffic .
+
+mrs:S3_IOBenchmark
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:S3_IOBenchmark ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:S3_IOBenchmark .
+
+nml:Link
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Link ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:Link .
+
+mrs:providesBucket
+      a       owl:ObjectProperty ;
+      rdfs:domain mrs:ObjectStorageService ;
+      rdfs:range mrs:Bucket ;
+      rdfs:subPropertyOf owl:topObjectProperty , mrs:providesBucket ;
+      owl:equivalentProperty
+              mrs:providesBucket ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:implementedBy
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range nml:NetworkObject ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:implementedBy ;
+      owl:equivalentProperty
+              nml:implementedBy ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b46
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:POSIX_IOBenchmark mrs:S3_IOBenchmark) .
+
+nml:Lifetime
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing , nml:Lifetime ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:Lifetime .
+
+nml:locatedAt
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range nml:Location ;
+      rdfs:subPropertyOf nml:locatedAt , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:locatedAt ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b47
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b47 .
+
+nml:Label
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing , nml:Label ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:Label .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:Node ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:route-to-wan>
+      a       nml:NetworkObject , owl:Thing , mrs:Route ;
+      mrs:nextHop _:b4 ;
+      mrs:prefix "0.0.0.0/0"^^xsd:string ;
+      owl:sameAs <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:route-to-wan> .
+
+mrs:ClusterNetworkService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:ClusterNetworkService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:ClusterNetworkService .
+
+nml:item
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:ListItem ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:item ;
+      owl:equivalentProperty
+              nml:item ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+<http://schemas.ogf.org/nml/2013/12/topology#POSIX_IOBenchmark>
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing , <http://schemas.ogf.org/nml/2013/12/topology#POSIX_IOBenchmark> ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass <http://schemas.ogf.org/nml/2013/12/topology#POSIX_IOBenchmark> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , mrs:POSIX_IOBenchmark ;
+      mrs:average_iops_4kb_read
+              "255000"^^xsd:long ;
+      mrs:average_iops_4kb_write
+              "255000"^^xsd:long ;
+      mrs:maximum_iops_4kb_read
+              "289000"^^xsd:long ;
+      mrs:maximum_iops_4kb_write
+              "289000"^^xsd:long ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1> .
+
+nml:values
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:LabelGroup ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf nml:values , owl:topDataProperty ;
+      owl:equivalentProperty
+              nml:values ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:end , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , mrs:maximum_iops_4kb_write , owl:bottomDataProperty , nml:version , nml:start , mrs:latency_usec , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:average_iops_4kb_write , mrs:burst_size_byte , nml:alt , mrs:maximum_object_size , mrs:memory_mb , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:maximum_iops_4kb_read .
+
+_:b48
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Link nml:LinkGroup nml:BidirectionalLink) .
+
+_:b12
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:Address nml:Port nml:PortGroup nml:BidirectionalPort) .
+
+_:b49
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b49 .
+
+_:b50
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Link nml:LinkGroup) .
+
+owl:bottomDataProperty
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:NetworkObject , mrs:Bucket , nml:LabelGroup , nml:Location , nml:SwitchingService , nml:Link , mrs:GenericCapabilityService , mrs:RoutingService , nml:Label , nml:Lifetime ;
+      rdfs:range xsd:float , xsd:boolean , xsd:long , xsd:string , xsd:int , xsd:dateTime ;
+      rdfs:subPropertyOf mrs:average_rate_kbps , nml:name , nml:value , mrs:capacity , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:burst_size_byte , nml:alt , mrs:capability , mrs:memory_mb , nml:labelSwapping , owl:topDataProperty , mrs:localAddress , mrs:maximum_iops_4kb_read , nml:values , nml:end , mrs:prefix , mrs:disk_gb , mrs:average_iops_4kb_read , nml:parameter , mrs:num_core , mrs:maximum_iops_4kb_write , nml:unlocode , nml:start , nml:version , owl:bottomDataProperty , mrs:latency_usec , mrs:average_iops_4kb_write , mrs:maximum_object_size , nml:lat , nml:noReturnTraffic ;
+      owl:equivalentProperty
+              owl:bottomDataProperty ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:name , nml:value , mrs:capacity , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:burst_size_byte , nml:alt , mrs:capability , mrs:memory_mb , nml:labelSwapping , owl:topDataProperty , mrs:localAddress , mrs:maximum_iops_4kb_read , nml:values , nml:end , mrs:prefix , mrs:disk_gb , mrs:average_iops_4kb_read , nml:parameter , mrs:num_core , mrs:maximum_iops_4kb_write , nml:unlocode , nml:start , nml:version , owl:bottomDataProperty , mrs:latency_usec , mrs:average_iops_4kb_write , mrs:maximum_object_size , nml:lat , nml:noReturnTraffic .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g2>
+      a       nml:NetworkObject , owl:Thing ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g2> .
+
+_:b51
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:POSIX_IOBenchmark mrs:S3_IOBenchmark) .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g1>
+      a       nml:NetworkObject , owl:Thing ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g1> .
+
+nml:hasOutboundPort
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range _:b19 ;
+      rdfs:subPropertyOf nml:hasOutboundPort , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:hasOutboundPort ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:Topology
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Topology , nml:Group ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:Topology .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b36 ;
+      owl:sameAs <urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b13 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> .
+
+_:b44
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11,313,314"^^xsd:string ;
+      owl:sameAs _:b44 .
+
+_:b43
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:AdaptationService nml:DeadaptationService) .
+
+nml:name
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b27 ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf nml:name , owl:topDataProperty ;
+      owl:equivalentProperty
+              nml:name ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:end , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , mrs:maximum_iops_4kb_write , owl:bottomDataProperty , nml:version , nml:start , mrs:latency_usec , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:average_iops_4kb_write , mrs:burst_size_byte , nml:alt , mrs:maximum_object_size , mrs:memory_mb , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:maximum_iops_4kb_read .
+
+_:b18
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2000-2099"^^xsd:string ;
+      owl:sameAs _:b18 .
+
+nml:providesLink
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:Service ;
+      rdfs:range _:b48 ;
+      rdfs:subPropertyOf nml:providesLink , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:providesLink ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:Group
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Group ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:Group .
+
+mrs:providesRoute
+      a       owl:ObjectProperty ;
+      rdfs:domain mrs:RoutingService ;
+      rdfs:range mrs:Route ;
+      rdfs:subPropertyOf mrs:providesRoute , owl:topObjectProperty ;
+      owl:equivalentProperty
+              mrs:providesRoute ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:isAlias
+      a       owl:ObjectProperty , owl:SymmetricProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range nml:NetworkObject ;
+      rdfs:subPropertyOf nml:isAlias , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:isAlias ;
+      owl:inverseOf nml:isAlias ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b45
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:POSIX_IOBenchmark mrs:S3_IOBenchmark) .
+
+_:b20
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "550-569,3020-3030,3100-3109,3200-3219"^^xsd:string ;
+      owl:sameAs _:b20 .
+
+<http://schemas.ogf.org/nml/2013/12/topology#S3_IOBenchmark>
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing , <http://schemas.ogf.org/nml/2013/12/topology#S3_IOBenchmark> ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass <http://schemas.ogf.org/nml/2013/12/topology#S3_IOBenchmark> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2> ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2> .
+
+nml:belongsTo
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range nml:NetworkObject ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:belongsTo ;
+      owl:equivalentProperty
+              nml:belongsTo ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b31
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:POSIX_IOBenchmark mrs:S3_IOBenchmark) .
+
+mrs:RoutingService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:RoutingService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:RoutingService .
+
+nml:isSource
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject ;
+      rdfs:range _:b50 ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:isSource ;
+      owl:equivalentProperty
+              nml:isSource ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:PortGroup
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:PortGroup , nml:Group ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:PortGroup .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b47 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> .
+
+nml:LinkGroup
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:LinkGroup , nml:Group ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:LinkGroup .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0>
+      a       nml:NetworkObject , owl:Thing , nml:BidirectionalPort , nml:Group ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0> .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b52 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> ;
+      owl:sameAs <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> .
+
+nml:  a       owl:Ontology ;
+      rdfs:label "NML Schema" .
+
+_:b53
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b53 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b11 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g2> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16> .
+
+nml:labeltype
+      a       owl:ObjectProperty ;
+      rdfs:domain _:b54 ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:labeltype ;
+      owl:equivalentProperty
+              nml:labeltype ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b5 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0> .
+
+nml:LabelGroup
+      a       owl:Class ;
+      rdfs:subClassOf nml:LabelGroup , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:LabelGroup .
+
+owl:Thing
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      owl:complementOf owl:Nothing ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass owl:Thing .
+
+_:b52
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b52 .
+
+nml:ListItem
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing , nml:ListItem ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass nml:ListItem .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , mrs:BlockStorageService , nml:Service ;
+      mrs:disk_gb "110592"^^xsd:long ;
+      mrs:hasBenchmark <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1> .
+
+_:b37
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:HypervisorService mrs:StorageService mrs:BlockStorageService mrs:ObjectStorageService) .
+
+nml:canProvidePort
+      a       owl:ObjectProperty ;
+      rdfs:domain nml:Service ;
+      rdfs:range _:b14 ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:canProvidePort ;
+      owl:equivalentProperty
+              nml:canProvidePort ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b53 ;
+      nml:isAlias <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> .
+
+_:b54
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (nml:Label nml:LabelGroup) .
+
+_:b33
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11,313,314"^^xsd:string ;
+      owl:sameAs _:b33 .
+
+_:b32
+      a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b32 .
+
+nml:alt
+      a       owl:DatatypeProperty ;
+      rdfs:domain nml:Location ;
+      rdfs:range xsd:float ;
+      rdfs:subPropertyOf nml:alt , owl:topDataProperty ;
+      owl:equivalentProperty
+              nml:alt ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:name , nml:value , mrs:capacity , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:burst_size_byte , mrs:capability , mrs:memory_mb , nml:labelSwapping , mrs:localAddress , mrs:maximum_iops_4kb_read , nml:values , nml:end , mrs:prefix , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , nml:parameter , mrs:maximum_iops_4kb_write , nml:unlocode , nml:version , owl:bottomDataProperty , nml:start , mrs:latency_usec , mrs:average_iops_4kb_write , mrs:maximum_object_size , nml:noReturnTraffic .
+
+owl:topDataProperty
+      a       owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      owl:equivalentProperty
+              owl:topDataProperty ;
+      owl:propertyDisjointWith
+              owl:bottomDataProperty .
+
+mrs:providesBenchmark
+      a       owl:ObjectProperty ;
+      rdfs:domain mrs:IOPerformanceMeasurementService ;
+      rdfs:range _:b30 ;
+      rdfs:subPropertyOf mrs:providesBenchmark , owl:topObjectProperty ;
+      owl:equivalentProperty
+              mrs:providesBenchmark ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+nml:isSerialCompoundLink
+      a       owl:ObjectProperty ;
+      rdfs:domain _:b41 ;
+      rdfs:range nml:ListItem ;
+      rdfs:subPropertyOf nml:isSerialCompoundLink , owl:topObjectProperty ;
+      owl:equivalentProperty
+              nml:isSerialCompoundLink ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+_:b2  a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b2 .
+
+mrs:Route
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:Route ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:Route .
+
+mrs:average_iops_4kb_read
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b46 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf mrs:average_iops_4kb_read , owl:topDataProperty ;
+      owl:equivalentProperty
+              mrs:average_iops_4kb_read ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+nml:parameter
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf owl:topDataProperty , nml:parameter ;
+      owl:equivalentProperty
+              nml:parameter ;
+      owl:propertyDisjointWith
+              mrs:average_rate_kbps , nml:end , mrs:disk_gb , mrs:average_iops_4kb_read , mrs:num_core , mrs:maximum_iops_4kb_write , owl:bottomDataProperty , nml:version , nml:start , mrs:latency_usec , nml:long , mrs:line_rate_kbps , mrs:peak_rate_kbps , mrs:average_iops_4kb_write , mrs:burst_size_byte , nml:alt , mrs:maximum_object_size , mrs:memory_mb , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:maximum_iops_4kb_read .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:routing-service>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , mrs:RoutingService , nml:Service ;
+      mrs:localAddress "206.196.178.66/27" ;
+      mrs:providesRoute <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:route-to-wan> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:routing-service> .
+
+_:b25
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:VirtualSwitchService mrs:HypervisorBypassInterfaceService mrs:ClusterNetworkService) .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:topology>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:Topology , nml:Group ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> , <urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1> , <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3> ;
+      nml:hasService <urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1> ;
+      owl:sameAs <urn:ogf:network:dragon.maxgigapop.net:2013:topology> .
+
+_:b23
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:HypervisorService mrs:StorageService mrs:BlockStorageService mrs:ObjectStorageService mrs:Volume mrs:Bucket) .
+
+nml:hasLabelGroup
+      a       owl:ObjectProperty ;
+      rdfs:domain _:b24 ;
+      rdfs:range nml:LabelGroup ;
+      rdfs:subPropertyOf owl:topObjectProperty , nml:hasLabelGroup ;
+      owl:equivalentProperty
+              nml:hasLabelGroup ;
+      owl:propertyDisjointWith
+              owl:bottomObjectProperty .
+
+mrs:maximum_iops_4kb_write
+      a       owl:DatatypeProperty ;
+      rdfs:domain _:b51 ;
+      rdfs:range xsd:long ;
+      rdfs:subPropertyOf owl:topDataProperty , mrs:maximum_iops_4kb_write ;
+      owl:equivalentProperty
+              mrs:maximum_iops_4kb_write ;
+      owl:propertyDisjointWith
+              nml:values , nml:end , mrs:prefix , nml:name , nml:parameter , nml:value , mrs:capacity , nml:unlocode , owl:bottomDataProperty , nml:start , nml:version , nml:long , nml:alt , mrs:capability , nml:lat , nml:labelSwapping , nml:noReturnTraffic , mrs:localAddress .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:route-to-wan>
+      a       nml:NetworkObject , owl:Thing , mrs:Route ;
+      mrs:nextHop <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> ;
+      mrs:prefix "0.0.0.0/0" , "0.0.0.0/0"^^xsd:string ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:route-to-wan> .
+
+mrs:IOPerformanceMeasurementService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:IOPerformanceMeasurementService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:IOPerformanceMeasurementService .
+
+_:b9  a       nml:LabelGroup , owl:Thing ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b9 .
+
+_:b21
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing ;
+      owl:disjointWith owl:Nothing ;
+      owl:unionOf (mrs:POSIX_IOBenchmark mrs:S3_IOBenchmark) .
+
+mrs:ObjectStorageService
+      a       owl:Class ;
+      rdfs:subClassOf nml:NetworkObject , owl:Thing , mrs:ObjectStorageService , nml:Service ;
+      owl:disjointWith owl:Nothing ;
+      owl:equivalentClass mrs:ObjectStorageService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9>
+      a       nml:NetworkObject , owl:Thing , owl:NamedIndividual , nml:BidirectionalPort , nml:Group ;
+      nml:hasLabelGroup _:b49 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> .
