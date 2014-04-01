@@ -36,7 +36,7 @@ import com.hp.hpl.jena.vocabulary.RDF;
  *
  */
 public final class modelTransformTest1 {
-    public static String instanceFileName = "src/main/resources/maxInfModel1.ttl";
+    public static String instanceFileName = "src/main/resources/genericInfModel.ttl";
     public static Resource[] selectSubjects = {
     	Nml.Topology,
     	Nml.Node,
