@@ -165,10 +165,8 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
                      <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Address"/>
-                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#Port"/>
-                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#PortGroup"/>
-                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#BidirectionalPort"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
