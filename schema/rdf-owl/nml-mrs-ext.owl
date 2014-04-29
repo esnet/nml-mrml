@@ -58,10 +58,24 @@
     </owl:Class>
     
 
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#SwitchingInstance -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#SwitchingInstance">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#SwitchingService"/>
+    </owl:Class>
+
+
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#RoutingService -->
 
     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#RoutingService">
         <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#RoutingInstance -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#RoutingInstance">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#RoutingService"/>
     </owl:Class>
 
 
