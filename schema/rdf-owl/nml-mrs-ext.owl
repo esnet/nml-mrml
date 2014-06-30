@@ -59,7 +59,11 @@
     
 
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#SwitchingInstance -->
-
+    <!--
+        SwitchingService describe switching attributes for entire scope.
+        SwitchingInstance models sub-level switching services, l2 cross-connects etc.
+    -->
+    
     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#SwitchingInstance">
         <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#SwitchingService"/>
     </owl:Class>
@@ -73,11 +77,19 @@
 
 
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#RoutingInstance -->
+    <!--
+        RoutingService describes routing attributes for the entire scope.
+        RoutingInstance models routing-instance, static routes for l3 cross-connects and vrf etc.
+    -->
 
     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#RoutingInstance">
         <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#RoutingService"/>
     </owl:Class>
 
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
 
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#HypervisorService -->
 
@@ -187,6 +199,15 @@
     </owl:ObjectProperty>
     
 
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasVPC -->
+    <!--  Modeling a relationship to provide Virtual Private Cloud  (AWS etc.). -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasVPC">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Topology"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Topology"/>
+    </owl:ObjectProperty>
+    
+    
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesVM -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesVM">
