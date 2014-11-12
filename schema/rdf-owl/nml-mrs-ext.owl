@@ -37,10 +37,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#Address -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress -->
 
-    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Address">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/> 
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/> 
     </owl:Class>
     
 
@@ -51,20 +51,13 @@
     </owl:Class>
     
 
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService -->
-
-    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService">
-        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
-    </owl:Class>
-    
-
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#SwitchingInstance -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#SwitchingSubnet -->
     <!--
-        SwitchingService describe switching attributes for entire scope.
-        SwitchingInstance models sub-level switching services, l2 cross-connects etc.
+        SwitchingService describe switching capability attributes for entire scope.
+        SwitchingSubnet models sub-level switching services, l2 cross-connects etc.
     -->
     
-    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#SwitchingInstance">
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#SwitchingSubnet">
         <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#SwitchingService"/>
     </owl:Class>
 
@@ -75,16 +68,6 @@
         <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
     </owl:Class>
 
-
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#RoutingInstance -->
-    <!--
-        RoutingService describes routing attributes for the entire scope.
-        RoutingInstance models routing-instance, static routes for l3 cross-connects and vrf etc.
-    -->
-
-    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#RoutingInstance">
-        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#RoutingService"/>
-    </owl:Class>
 
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#VirtualCloudService -->
 
@@ -185,6 +168,33 @@
      -->
 
 
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#routeTo -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#routeTo">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#routeFrom -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#routeFrom">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#nextHop -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#nextHop">
@@ -192,8 +202,8 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress"/>
                      <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
-                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Address"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -312,14 +322,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#prefix -->
-
     <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#prefix">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
                     <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Address"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
