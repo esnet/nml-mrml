@@ -167,6 +167,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAddress -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAddress">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress"/>
+    </owl:ObjectProperty>
 
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#routeTo -->
 
