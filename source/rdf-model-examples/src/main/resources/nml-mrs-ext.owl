@@ -40,7 +40,7 @@
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress -->
 
     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/> 
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
@@ -167,6 +167,21 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#type -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#type">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#value -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#value">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAddress -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAddress">
@@ -280,6 +295,13 @@
     </owl:ObjectProperty>
 
 
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesSubnet -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesSubnet">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#SwitchingService"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#SwitchingSubnet"/>
+    </owl:ObjectProperty>
+    
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesRoute -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesRoute">
