@@ -271,7 +271,13 @@
         <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Volume"/>
     </owl:ObjectProperty>
 
-    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasVolume -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasVolume">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Volume"/>
+    </owl:ObjectProperty>
+
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesBucket -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesBucket">
@@ -279,6 +285,12 @@
         <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Bucket"/>
     </owl:ObjectProperty>    
 
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasBucket -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasBucket">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Bucket"/>
+    </owl:ObjectProperty>
 
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesBenchmark -->
 
