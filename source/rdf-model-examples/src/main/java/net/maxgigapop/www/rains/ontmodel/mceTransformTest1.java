@@ -109,15 +109,18 @@ public final class mceTransformTest1 {
         Query query = QueryFactory.create(sparqlString);
         QueryExecution qexec = QueryExecutionFactory.create(query, model);
         Model modelConstructed = qexec.execConstruct();
-        modelConstructed.write(System.out, "TURTLE");
+        //modelConstructed.write(System.out, "TURTLE");
 
         Reasoner reasoner = new GenericRuleReasoner(Rule.parseRules(rulesString));
         reasoner.setDerivationLogging(true);
         InfModel infModel = ModelFactory.createInfModel(reasoner, modelConstructed);   
-        infModel.write(System.out, "TURTLE");
+        //infModel.write(System.out, "TURTLE");
         Resource nodeA = infModel.getResource("urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-2-3:link=*");
         Resource nodeZ = infModel.getResource("urn:ogf:network:domain=dragon.maxgigapop.net:node=MCLN:port=1-3-1:link=*");
-        Path ontPath = findShortestPath(infModel, nodeA, nodeZ, ANY);
+        //Path ontPath = findShortestPath(infModel, nodeA, nodeZ, ANY);
+        Model deInfModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MICRO_RULE_INF);
+        deInfModel.add(infModel);
+        List<Path> ksp = computeKShortestPaths(deInfModel, nodeA, nodeZ, 10);
     }
 
     private static String readFile(String file) throws IOException {
@@ -134,11 +137,11 @@ public final class mceTransformTest1 {
         return stringBuilder.toString();
     }
 
-    private static List<Path> computeKShortestPaths(OntModel model, Resource nodeA, Resource nodeZ, int K) {
+    private static List<Path> computeKShortestPaths(Model model, Resource nodeA, Resource nodeZ, int K) {
         final Filter<Statement> ANY = Filter.any();
         final HashMap<Path, Resource> deviationMap = new HashMap<Path, Resource>();
-        final Set<Statement> maskedLinks = new HashSet<Statement>();
-        final HashMap<Path, Set<Statement>> pathMaskMap = new HashMap<Path, Set<Statement>>();
+        final HashSet<Statement> maskedLinks = new HashSet<Statement>();
+        final HashMap<Path, HashSet<Statement>> pathMaskMap = new HashMap<Path, HashSet<Statement>>();
         List<Path> KSP = new ArrayList<Path>();
         List<Path> candidatePaths = new ArrayList<Path>();
         // find the first shortest path
@@ -148,11 +151,9 @@ public final class mceTransformTest1 {
         KSP.add(nextPath);
         candidatePaths.add(nextPath);
         int kspCounter = 1;
-        Path aPath;
         while (!candidatePaths.isEmpty() && KSP.size() <= K) {
-            aPath = getLeastCostPath(candidatePaths);
-            Path headPath = aPath;
-            candidatePaths.remove(aPath);
+            Path headPath = getLeastCostPath(candidatePaths);
+            candidatePaths.remove(headPath);
             if (kspCounter > 1) 
                 KSP.add(headPath);
             if (kspCounter == K) 
@@ -167,23 +168,25 @@ public final class mceTransformTest1 {
                 if (itStmt.hasNext()) {
                     Statement linkToMask = itStmt.next();
                     maskedLinks.add(linkToMask);
-                    model.remove(linkToMask);
+                    model = model.remove(linkToMask);
                 }
                 itStmt = model.listStatements(null, null, stmtLink.getSubject());
                 if (itStmt.hasNext()) {
                     Statement linkToMask = itStmt.next();
                     maskedLinks.add(linkToMask);
-                    model.remove(linkToMask);
+                    model = model.remove(linkToMask);
                 }
             }
             for (Statement stmtLink: headPath) {
                 // filter out masked links in headPath 
                 if (pathMaskMap.containsKey(headPath)) {
                     maskedLinks.addAll(pathMaskMap.get(headPath));
-                    model.remove((Statement[])pathMaskMap.get(headPath).toArray());
+                    for (Statement stmtMaskedLink: pathMaskMap.get(headPath))
+                        model = model.remove(stmtMaskedLink);
                 }
-                // mask current link -> no need to put into maskedLinks
-                model.remove(stmtLink);
+                // mask current link
+                model = model.remove(stmtLink);
+                maskedLinks.add(stmtLink);
                 Path deviationPath = findShortestPath(model, stmtLink.getSubject(), headPath.getTerminalResource(), ANY);
                 nextPath = new Path();
                 if (deviationPath != null) {
@@ -210,12 +213,16 @@ public final class mceTransformTest1 {
                     // add another candiate path
                     candidatePaths.add(nextPath);
                 }
-                // add back current link
-                model.add(stmtLink);
+                //?? add back current link?
+                //model.add(stmtLink);
+                //maskedLinks.remove(stmtLink);
             }
             kspCounter++;
         }
-        model.add((Statement[])maskedLinks.toArray());
+        model.write(System.out, "TURTLE");
+        for (Statement stmtMaskedLink: maskedLinks)
+            model.add(stmtMaskedLink);
+        model.write(System.out, "TURTLE");
         return KSP;
     }
     
@@ -223,7 +230,7 @@ public final class mceTransformTest1 {
         long cost = 1000000;
         Path solution = null;
         for (Path path: candidates) {
-            if (path.size() > cost) {
+            if (path.size() < cost) {
                 cost = path.size();
                 solution = path;
             }
