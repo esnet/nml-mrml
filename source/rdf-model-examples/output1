@@ -1,0 +1,637 @@
+### Dump Sub-Topology urn:ogf:network:dragon.maxgigapop.net:2013:topology
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nml:     <http://schemas.ogf.org/nml/2013/03/base#> .
+@prefix mrs:     <http://schemas.ogf.org/mrs/2013/12/topology#> .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2>
+      a       owl:Thing , owl:NamedIndividual , rdfs:Resource , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1> , <urn:ogf:network:dragon.maxgigapop.net:2013:topology> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup , owl:Thing , rdfs:Resource ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "2-4094"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> .
+
+nml:SwitchingService
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , nml:SwitchingService , rdfs:Resource ;
+      owl:equivalentClass nml:SwitchingService .
+
+rdfs:Resource
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource ;
+      owl:equivalentClass owl:Thing , rdfs:Resource .
+
+owl:Class
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      owl:equivalentClass owl:Class .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:topology>
+      a       owl:Thing , owl:NamedIndividual , nml:Topology , rdfs:Resource ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> , <urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1> , <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3> ;
+      nml:hasService <urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1> .
+
+rdfs:Class
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , rdfs:Class ;
+      owl:equivalentClass rdfs:Class .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1>
+      a       owl:Thing , owl:NamedIndividual , nml:SwitchingService , rdfs:Resource ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> , <urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1> , <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:dragon.maxgigapop.net:2013:topology> .
+
+nml:LabelGroup
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf nml:LabelGroup , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass nml:LabelGroup .
+
+owl:Thing
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource ;
+      owl:equivalentClass owl:Thing , rdfs:Resource .
+
+owl:NamedIndividual
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , owl:NamedIndividual , rdfs:Resource ;
+      owl:equivalentClass owl:NamedIndividual .
+
+nml:Topology
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , nml:Topology , rdfs:Resource ;
+      owl:equivalentClass nml:Topology .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1>
+      a       owl:Thing , owl:NamedIndividual , rdfs:Resource , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1> , <urn:ogf:network:dragon.maxgigapop.net:2013:topology> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup , owl:Thing , rdfs:Resource ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "550-569,3020-3030,3100-3109,3200-3219"^^xsd:string
+              ] .
+
+nml:BidirectionalPort
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , nml:BidirectionalPort ;
+      owl:equivalentClass nml:BidirectionalPort .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3>
+      a       owl:Thing , owl:NamedIndividual , rdfs:Resource , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1> , <urn:ogf:network:dragon.maxgigapop.net:2013:topology> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup , owl:Thing , rdfs:Resource ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "550-569,3020-3030,3100-3109,3200-3219"^^xsd:string
+              ] .
+### Dump Sub-Topology urn:ogf:network:rains.maxgigapop.net:2013:topology
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nml:     <http://schemas.ogf.org/nml/2013/03/base#> .
+@prefix mrs:     <http://schemas.ogf.org/mrs/2013/12/topology#> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "11"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "11"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> .
+
+mrs:POSIX_IOBenchmark
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , mrs:POSIX_IOBenchmark ;
+      owl:equivalentClass mrs:POSIX_IOBenchmark .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:switching-service>
+      a       owl:NamedIndividual , nml:SwitchingService ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "2-4094"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public>
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:ovs> ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service>
+      a       owl:NamedIndividual , mrs:StorageService , rdfs:Resource ;
+      mrs:disk_gb "110592"^^xsd:long ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1> ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> .
+
+mrs:StorageService
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf mrs:StorageService , rdfs:Resource ;
+      owl:equivalentClass mrs:StorageService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2> ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw>
+      a       owl:NamedIndividual , rdfs:Resource , nml:Node ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:topology> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:switching-service> .
+
+mrs:RoutingService
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , mrs:RoutingService ;
+      owl:equivalentClass mrs:RoutingService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "11,313,314"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "11"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0> .
+
+mrs:HypervisorBypassInterfaceService
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , mrs:HypervisorBypassInterfaceService ;
+      owl:equivalentClass mrs:HypervisorBypassInterfaceService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0>
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "11"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4>
+      a       owl:NamedIndividual , nml:Node , rdfs:Resource ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:topology> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "2-4094"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g2> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:sriov-vm-fex>
+      a       owl:NamedIndividual , rdfs:Resource , mrs:HypervisorBypassInterfaceService ;
+      mrs:providesVNic <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "11"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2> ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> .
+
+nml:LabelGroup
+      a       rdfs:Resource , rdfs:Class .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:switching-service> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "11,313,314"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service>
+      a       owl:NamedIndividual , nml:SwitchingService ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "11"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> .
+
+mrs:HypervisorService
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf mrs:HypervisorService , rdfs:Resource ;
+      owl:equivalentClass mrs:HypervisorService .
+
+mrs:BlockStorageService
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf mrs:BlockStorageService , rdfs:Resource ;
+      owl:equivalentClass mrs:BlockStorageService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509>
+      a       owl:NamedIndividual , rdfs:Resource , nml:Node ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:topology> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:routing-service> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1>
+      a       owl:NamedIndividual , mrs:BlockStorageService , rdfs:Resource ;
+      mrs:disk_gb "110592"^^xsd:long ;
+      mrs:hasBenchmark <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1> ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "2-4094"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1>
+      a       owl:NamedIndividual , nml:Node , rdfs:Resource ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:topology> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-nova> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:sriov-vm-fex> .
+
+nml:SwitchingService
+      a       rdfs:Resource , rdfs:Class .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service>
+      a       owl:NamedIndividual , rdfs:Resource , mrs:IOPerformanceMeasurementService ;
+      mrs:providesBenchmark
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1> ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph>
+      a       owl:NamedIndividual , nml:Node , rdfs:Resource ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:topology> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2>
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2> .
+
+mrs:VirtualSwitchService
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , mrs:VirtualSwitchService ;
+      owl:equivalentClass mrs:VirtualSwitchService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:ovs> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "2000-2099"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> .
+
+nml:BidirectionalPort
+      a       rdfs:Resource , rdfs:Class .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron>
+      a       owl:NamedIndividual , rdfs:Resource , mrs:VirtualSwitchService ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:ovs> ;
+      nml:providesPort <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1>
+      a       owl:NamedIndividual , rdfs:Resource , mrs:POSIX_IOBenchmark ;
+      mrs:average_iops_4kb_read
+              "255000"^^xsd:long ;
+      mrs:average_iops_4kb_write
+              "255000"^^xsd:long ;
+      mrs:maximum_iops_4kb_read
+              "289000"^^xsd:long ;
+      mrs:maximum_iops_4kb_write
+              "289000"^^xsd:long .
+
+mrs:Route
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf mrs:Route , rdfs:Resource ;
+      owl:equivalentClass mrs:Route .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-nova>
+      a       owl:NamedIndividual , mrs:HypervisorService , rdfs:Resource ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> .
+
+nml:Node
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , nml:Node ;
+      owl:equivalentClass nml:Node .
+
+rdfs:Resource
+      a       owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource ;
+      owl:equivalentClass rdfs:Resource .
+
+owl:Class
+      a       owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , owl:Class , rdfs:Class ;
+      owl:equivalentClass owl:Class .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:routing-service>
+      a       owl:NamedIndividual , rdfs:Resource , mrs:RoutingService ;
+      mrs:localAddress "206.196.178.66/27" ;
+      mrs:providesRoute <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:route-to-wan> ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> .
+
+rdfs:Class
+      a       owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , rdfs:Class ;
+      owl:equivalentClass rdfs:Class .
+
+mrs:IOPerformanceMeasurementService
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , mrs:IOPerformanceMeasurementService ;
+      owl:equivalentClass mrs:IOPerformanceMeasurementService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:route-to-wan>
+      a       mrs:Route , rdfs:Resource ;
+      mrs:nextHop <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> ;
+      mrs:prefix "0.0.0.0/0" .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "2-4094"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g1> .
+
+nml:Topology
+      a       rdfs:Resource , rdfs:Class .
+
+owl:NamedIndividual
+      a       rdfs:Resource , rdfs:Class .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1> ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:topology>
+      a       owl:NamedIndividual , nml:Topology ;
+      nml:hasNode <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:ovs>
+      a       owl:NamedIndividual , nml:SwitchingService ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "11"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:switching-service> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "2-4094"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> .
+### Dump Sub-Topology urn:ogf:network:ipnet.maxgigapop.net:2013:topology
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nml:     <http://schemas.ogf.org/nml/2013/03/base#> .
+@prefix mrs:     <http://schemas.ogf.org/mrs/2013/12/topology#> .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0>
+      a       owl:NamedIndividual , nml:BidirectionalPort ;
+      nml:belongsTo <urn:ogf:network:ipnet.maxgigapop.net:2013:topology> ;
+      nml:hasLabelGroup
+              [ a       nml:LabelGroup ;
+                nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+                nml:values "11,313,314"^^xsd:string
+              ] ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> .
+
+mrs:Route
+      a       rdfs:Resource , rdfs:Class .
+
+mrs:Address
+      a       rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf mrs:Address , rdfs:Resource ;
+      owl:equivalentClass mrs:Address .
+
+rdfs:Resource
+      a       owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource ;
+      owl:equivalentClass rdfs:Resource .
+
+owl:Class
+      a       owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , owl:Class , rdfs:Class ;
+      owl:equivalentClass owl:Class .
+
+rdfs:Class
+      a       owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , rdfs:Class ;
+      owl:equivalentClass rdfs:Class .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:routing-service>
+      a       owl:NamedIndividual , mrs:RoutingService ;
+      mrs:localAddress "206.196.177.248/26" ;
+      mrs:providesRoute <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:route-to-wan> ;
+      nml:serviceProvidedBy
+              <urn:ogf:network:ipnet.maxgigapop.net:2013:topology> .
+
+nml:LabelGroup
+      a       rdfs:Resource , rdfs:Class .
+
+nml:Topology
+      a       rdfs:Resource , rdfs:Class .
+
+owl:NamedIndividual
+      a       rdfs:Resource , rdfs:Class .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:route-to-wan>
+      a       mrs:Route ;
+      mrs:nextHop
+              [ a       mrs:Address , rdfs:Resource ;
+                mrs:prefix "0.0.0.0/0"^^xsd:string
+              ] ;
+      mrs:prefix "0.0.0.0/0"^^xsd:string .
+
+nml:BidirectionalPort
+      a       rdfs:Resource , rdfs:Class .
+
+mrs:RoutingService
+      a       rdfs:Resource , rdfs:Class .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:topology>
+      a       owl:NamedIndividual , nml:Topology ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0> ;
+      nml:hasService <urn:ogf:network:ipnet.maxgigapop.net:2013:routing-service> .
+### Remaining Topology
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nml:     <http://schemas.ogf.org/nml/2013/03/base#> .
+@prefix mrs:     <http://schemas.ogf.org/mrs/2013/12/topology#> .
+
+owl:FunctionalProperty
+      rdfs:subClassOf rdfs:Resource .
+
+rdf:Statement
+      a       owl:Class ;
+      rdfs:subClassOf rdf:Statement ;
+      owl:equivalentClass rdf:Statement .
+
+owl:Ontology
+      a       owl:Class ;
+      rdfs:subClassOf owl:Ontology ;
+      owl:equivalentClass owl:Ontology .
+
+rdf:List
+      a       owl:Class ;
+      rdfs:subClassOf rdf:List ;
+      owl:equivalentClass rdf:List .
+
+owl:ObjectProperty
+      rdfs:subClassOf rdfs:Resource .
+
+rdfs:label
+      rdfs:subPropertyOf rdfs:label ;
+      owl:equivalentProperty
+              rdfs:label .
+
+<http://www.maxgigapop.net/mrs/2013/topology#>
+      a       owl:Ontology , rdfs:Resource ;
+      rdfs:label "NML-MRS Description of the MAX Research Infrastructure" .
+
+owl:SymmetricProperty
+      rdfs:subClassOf rdfs:Resource .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g2>
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g1>
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12> .
+
+rdfs:Literal
+      a       owl:Class ;
+      rdfs:subClassOf rdfs:Literal ;
+      owl:equivalentClass rdfs:Literal .
+
+owl:OntologyProperty
+      rdfs:subClassOf rdfs:Resource .
+
+owl:Property
+      a       owl:Class ;
+      rdfs:subClassOf owl:Property ;
+      owl:equivalentClass owl:Property .
+
+owl:InverseFunctionalProperty
+      rdfs:subClassOf rdfs:Resource .
+
+rdfs:ContainerMembershipProperty
+      rdfs:subClassOf rdfs:Resource .
+
+owl:TransitiveProperty
+      rdfs:subClassOf rdfs:Resource .
+
+owl:DatatypeProperty
+      rdfs:subClassOf rdfs:Resource .

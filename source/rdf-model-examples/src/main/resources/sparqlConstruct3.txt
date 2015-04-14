@@ -1,0 +1,53 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX nml: <http://schemas.ogf.org/nml/2013/03/base#>
+PREFIX mrs: <http://schemas.ogf.org/mrs/2013/12/topology#>
+    
+## Layer 2 connectivity and TE constraints
+
+CONSTRUCT {
+# get Topology/Node -> (SwService -> *) / (BidirectionalPort -> *)
+  ?node nml:hasService ?swsvc. 
+  ?node nml:hasBidirectionalPort ?biport . 
+  ?swsvc a nml:SwitchingService . 
+  ?swsvc ?nml_p1 ?nml_o1 . 
+  ?biport a nml:BidirectionalPort . 
+  ?biport ?nml_p2 ?nml_o2 . 
+# get SwSubnet as well
+  ?swsvc mrs:providesSubnet ?subnet . 
+  ?subnet a mrs:SwitchingSubnet .
+  ?subnet ?nml_p2_1 ?nml_p2_1 .
+# get BidirectionalPort -> Label/LabelGroup -> *
+  ?label a ?label_or_labelgroup .
+  ?label ?nml_p3 ?nml_o3 . 
+# TODO: get everything under mrs:(De)AdaptationService
+} WHERE {
+  { ?node a  ?nodetype.
+    ?node nml:hasService ?swsvc . 
+    ?swsvc a nml:SwitchingService . 
+    ?swsvc ?nml_p1 ?nml_o1 . 
+    ?swsvc nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> . 
+    ?biport a nml:BidirectionalPort . 
+    ?biport ?nml_p2 ?nml_o2 . 
+    OPTIONAL {
+      ?swsvc mrs:providesSubnet ?subnet . 
+      ?subnet a mrs:SwitchingSubnet .
+      ?subnet ?nml_p2_1 ?nml_p2_1 .
+    }
+    FILTER ((?nodetype in (nml:Topology, nml:Node)) &&
+        (REGEX(STR(?nml_p1), '^http://schemas.ogf.org/nml/2013/03/base#')) &&
+        (REGEX(STR(?nml_p2), '^http://schemas.ogf.org/nml/2013/03/base#')) &&
+        (REGEX(STR(?nml_p2_1), '^http://schemas.ogf.org/nml/2013/03/base#'))
+    )
+  } UNION {
+    ?biport a nml:BidirectionalPort . 
+    ?biport ?haslabel_or_labelgroup ?label . 
+    ?label a ?label_or_labelgroup .
+    ?label ?nml_p3 ?nml_o3 . 
+    FILTER ((?label_or_labelgroup in (nml:Label, nml:LabelGroup)) &&
+    	(?haslabel_or_labelgroup in (nml:hasLabel, nml:hasLabelGroup)) &&
+    	(REGEX(STR(?nml_p3), '^http://schemas.ogf.org/nml/2013/03/base#'))
+    )
+  }
+}

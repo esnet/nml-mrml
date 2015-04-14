@@ -1,0 +1,3042 @@
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 'NML-MRS Description of the MAX Research Infrastructure'
+Implicated node: owl:sameAs
+Implicated node: 'NML-MRS Description of the MAX Research Infrastructure'
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 'NML Schema'
+Implicated node: owl:sameAs
+Implicated node: 'NML Schema'
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+Implicated node: owl:sameAs
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+Implicated node: owl:sameAs
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = '11'^^http://www.w3.org/2001/XMLSchema#string
+Implicated node: owl:sameAs
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+Implicated node: owl:sameAs
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+Implicated node: owl:sameAs
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+Implicated node: owl:sameAs
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7a
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7a
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7a
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7a
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7a
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7a
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6f
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6f
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6f
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6f
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6f
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6f
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f72
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f72
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f72
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f72
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f72
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f72
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6c
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6c
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6c
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6c
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6c
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f6c
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f68
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f68
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f68
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f68
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f68
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f68
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f71
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f71
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f71
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f71
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f71
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f71
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f22
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f22
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f22
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f22
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f22
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f22
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f48
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f48
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f48
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f48
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f48
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f48
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f2c
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = '11'^^http://www.w3.org/2001/XMLSchema#string
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f73
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f73
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f73
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f73
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f73
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f73
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f74
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f74
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f74
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f74
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f74
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f74
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7b
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7b
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7b
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7b
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7b
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7b
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f85
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f85
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f85
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f85
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f85
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f85
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f69
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f69
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f69
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f69
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f69
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f69
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f87
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f87
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f87
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f87
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f87
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f87
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f77
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f77
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f77
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f77
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f77
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f77
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7e
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7e
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7e
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7e
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7e
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7e
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f54
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f54
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f54
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f54
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f54
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7d
+Implicated node: owl:differentFrom
+Implicated node: '2-4094'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7d
+Implicated node: owl:differentFrom
+Implicated node: '11'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7d
+Implicated node: owl:differentFrom
+Implicated node: '2000-2099'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7d
+Implicated node: owl:differentFrom
+Implicated node: '11,313,314'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7d
+Implicated node: owl:differentFrom
+Implicated node: '550-569,3020-3030,3100-3109,3200-3219'^^http://www.w3.org/2001/XMLSchema#string
+
+model invalid:"Literal value for object property (prop, value)"
+Culprit = 3c165bd0:1451dde7c09:-7f7d
+Implicated node: owl:differentFrom
+Implicated node: 'false'^^http://www.w3.org/2001/XMLSchema#boolean
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nml:     <http://schemas.ogf.org/nml/2013/03/base#> .
+@prefix mrs:     <http://schemas.ogf.org/mrs/2013/12/topology#> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b11 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> .
+
+_:b12
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , _:b12 , rdfs:Resource ;
+      owl:equivalentClass _:b12 ;
+      owl:sameAs _:b12 ;
+      owl:unionOf _:b13 .
+
+xsd:double
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , xsd:double , rdfs:Resource ;
+      owl:equivalentClass xsd:double ;
+      owl:sameAs xsd:double .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b14 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> .
+
+_:b15
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , _:b15 , rdfs:Resource ;
+      owl:equivalentClass _:b15 ;
+      owl:sameAs _:b15 ;
+      owl:unionOf _:b16 .
+
+xsd:unsignedByte
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf xsd:unsignedShort , owl:Thing , xsd:nonNegativeInteger , xsd:byte , xsd:unsignedLong , xsd:unsignedByte , rdfs:Resource , xsd:long , xsd:unsignedInt , xsd:int , xsd:short , xsd:integer ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:unsignedByte ;
+      owl:sameAs xsd:unsignedByte .
+
+_:b17
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b18 ;
+      owl:sameAs _:b17 .
+
+mrs:POSIX_IOBenchmark
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , mrs:POSIX_IOBenchmark ;
+      owl:equivalentClass mrs:POSIX_IOBenchmark ;
+      owl:sameAs mrs:POSIX_IOBenchmark .
+
+_:b19
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b19 ;
+      owl:equivalentClass _:b19 ;
+      owl:sameAs _:b19 ;
+      owl:unionOf _:b20 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public>
+      a       _:b1 , _:b12 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , _:b21 , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> .
+
+_:b22
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b22 .
+
+_:b24
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b24 ;
+      owl:equivalentClass _:b24 ;
+      owl:sameAs _:b24 ;
+      owl:unionOf _:b25 .
+
+_:b26
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:NetworkObject ;
+      rdf:rest () ;
+      owl:sameAs _:b26 .
+
+_:b27
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b28 ;
+      owl:sameAs _:b27 .
+
+_:b29
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b30 ;
+      owl:sameAs _:b29 .
+
+_:b31
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b31 .
+
+<urn:x-hp-jena:rubrik/validation>
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf <urn:x-hp-jena:rubrik/validation> ;
+      owl:sameAs <urn:x-hp-jena:rubrik/validation> .
+
+owl:DatatypeProperty
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      owl:equivalentClass owl:DatatypeProperty ;
+      owl:sameAs owl:DatatypeProperty .
+
+owl:equivalentClass
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:range owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subPropertyOf owl:equivalentClass ;
+      owl:equivalentProperty
+              owl:equivalentClass ;
+      owl:sameAs owl:equivalentClass .
+
+_:b21
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b21 ;
+      owl:equivalentClass _:b21 ;
+      owl:sameAs _:b21 ;
+      owl:unionOf _:b32 .
+
+_:b33
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b33 .
+
+nml:hasPort
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 , nml:Group ;
+      rdfs:range owl:Thing , rdfs:Resource , _:b34 , _:b35 ;
+      rdfs:subPropertyOf nml:hasPort ;
+      owl:equivalentProperty
+              nml:hasPort ;
+      owl:sameAs nml:hasPort .
+
+_:b9  a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b9 ;
+      owl:equivalentClass _:b9 ;
+      owl:sameAs _:b9 ;
+      owl:unionOf _:b36 .
+
+rdfs:Datatype
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      owl:equivalentClass rdfs:Datatype ;
+      owl:sameAs rdfs:Datatype .
+
+rdf:rest
+      a       rdf:Property , owl:FunctionalProperty , owl:Thing , rdfs:Resource ;
+      rdfs:domain owl:Thing , rdf:List , rdfs:Resource ;
+      rdfs:range owl:Thing , rdf:List , rdfs:Resource ;
+      rdfs:subPropertyOf rdf:rest ;
+      owl:equivalentProperty
+              rdf:rest ;
+      owl:sameAs rdf:rest .
+
+nml:hasBidirectionalPort
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range _:b5 , nml:NetworkObject , _:b6 , owl:Thing , _:b1 , _:b2 , _:b3 , _:b7 , rdfs:Resource , _:b4 , _:b8 , nml:BidirectionalPort , _:b9 , nml:Group , _:b10 ;
+      rdfs:subPropertyOf nml:hasBidirectionalPort ;
+      owl:equivalentProperty
+              nml:hasBidirectionalPort ;
+      owl:sameAs nml:hasBidirectionalPort .
+
+nml:Location
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b5 , nml:Location , owl:Thing , rdfs:Resource , _:b4 ;
+      owl:equivalentClass nml:Location ;
+      owl:sameAs nml:Location .
+
+_:b37
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalLink ;
+      rdf:rest () ;
+      owl:sameAs _:b37 .
+
+_:b38
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b39 ;
+      owl:sameAs _:b38 .
+
+_:b40
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:SwitchingService ;
+      rdf:rest () ;
+      owl:sameAs _:b40 .
+
+mrs:Address
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , mrs:Address , rdfs:Resource ;
+      owl:equivalentClass mrs:Address ;
+      owl:sameAs mrs:Address .
+
+mrs:prefix
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:prefix ;
+      owl:equivalentProperty
+              mrs:prefix ;
+      owl:sameAs mrs:prefix .
+
+owl:disjointWith
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty , owl:SymmetricProperty ;
+      rdfs:domain owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:range owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subPropertyOf owl:disjointWith ;
+      owl:equivalentProperty
+              owl:disjointWith ;
+      owl:sameAs owl:disjointWith .
+
+_:b41
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest _:b17 ;
+      owl:sameAs _:b41 .
+
+_:b30
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b30 .
+
+_:b42
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b42 .
+
+_:b43
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b43 .
+
+xsd:gMonthDay
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf xsd:gMonthDay , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass xsd:gMonthDay ;
+      owl:sameAs xsd:gMonthDay .
+
+_:b28
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalPort ;
+      rdf:rest _:b44 ;
+      owl:sameAs _:b28 .
+
+rdfs:domain
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:range owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subPropertyOf rdfs:domain ;
+      owl:equivalentProperty
+              rdfs:domain ;
+      owl:sameAs rdfs:domain .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , _:b8 , nml:BidirectionalPort , _:b9 , _:b10 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> .
+
+nml:hasInboundPort
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , _:b15 , _:b45 , rdfs:Resource ;
+      rdfs:subPropertyOf nml:hasInboundPort ;
+      owl:equivalentProperty
+              nml:hasInboundPort ;
+      owl:sameAs nml:hasInboundPort .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service>
+      a       _:b5 , nml:NetworkObject , owl:Thing , _:b1 , owl:NamedIndividual , nml:SwitchingService , _:b7 , rdfs:Resource , _:b4 , nml:Service ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> .
+
+nml:BidirectionalLink
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf _:b5 , nml:NetworkObject , _:b46 , _:b6 , _:b47 , owl:Thing , nml:BidirectionalLink , _:b2 , rdfs:Resource , _:b4 , _:b8 , nml:Group , _:b10 ;
+      owl:equivalentClass nml:BidirectionalLink ;
+      owl:sameAs nml:BidirectionalLink .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b22 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0> .
+
+nml:noReturnTraffic
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain _:b46 , _:b1 , rdfs:Resource , _:b4 , _:b48 , _:b49 , _:b50 , _:b5 , _:b51 , nml:NetworkObject , _:b6 , _:b47 , _:b52 , owl:Thing , _:b53 , _:b7 , nml:Link , _:b54 , _:b55 , _:b10 ;
+      rdfs:range owl:Thing , rdfs:Resource , xsd:boolean ;
+      rdfs:subPropertyOf nml:noReturnTraffic ;
+      owl:equivalentProperty
+              nml:noReturnTraffic ;
+      owl:sameAs nml:noReturnTraffic .
+
+_:b56
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b56 .
+
+_:b32
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b57 ;
+      owl:sameAs _:b32 .
+
+_:b34
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b34 ;
+      owl:equivalentClass _:b34 ;
+      owl:sameAs _:b34 ;
+      owl:unionOf _:b38 .
+
+_:b36
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b58 ;
+      owl:sameAs _:b36 .
+
+mrs:nextHop
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:nextHop ;
+      owl:equivalentProperty
+              mrs:nextHop ;
+      owl:sameAs mrs:nextHop .
+
+owl:FunctionalProperty
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:FunctionalProperty , rdf:Property , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass owl:FunctionalProperty ;
+      owl:sameAs owl:FunctionalProperty .
+
+xsd:unsignedShort
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf xsd:unsignedShort , owl:Thing , xsd:nonNegativeInteger , xsd:unsignedLong , rdfs:Resource , xsd:long , xsd:unsignedInt , xsd:int , xsd:short , xsd:integer ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:unsignedShort ;
+      owl:sameAs xsd:unsignedShort .
+
+_:b59
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b43 ;
+      owl:sameAs _:b59 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , rdfs:Resource , _:b4 , nml:Service , mrs:IOPerformanceMeasurementService ;
+      mrs:providesBenchmark
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service> .
+
+_:b60
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalPort ;
+      rdf:rest _:b61 ;
+      owl:sameAs _:b60 .
+
+nml:hasLabel
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b6 , owl:Thing , rdfs:Resource , _:b10 ;
+      rdfs:range owl:Thing , rdfs:Resource , _:b23 , nml:Label , _:b24 ;
+      rdfs:subPropertyOf nml:hasLabel ;
+      owl:equivalentProperty
+              nml:hasLabel ;
+      owl:sameAs nml:hasLabel .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:routing-service>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , rdfs:Resource , _:b4 , mrs:RoutingService , nml:Service ;
+      mrs:localAddress "206.196.177.248/26" ;
+      mrs:providesRoute <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:route-to-wan> ;
+      owl:sameAs <urn:ogf:network:ipnet.maxgigapop.net:2013:routing-service> .
+
+_:b62
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalLink ;
+      rdf:rest () ;
+      owl:sameAs _:b62 .
+
+_:b63
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b63 .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1>
+      a       _:b5 , nml:NetworkObject , owl:Thing , _:b1 , owl:NamedIndividual , nml:SwitchingService , _:b7 , rdfs:Resource , _:b4 , nml:Service ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> , <urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1> , <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      owl:sameAs <urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1> .
+
+_:b64
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11,313,314"^^xsd:string ;
+      owl:sameAs _:b64 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2> .
+
+_:b58
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest _:b65 ;
+      owl:sameAs _:b58 .
+
+rdf:type
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:range owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subPropertyOf rdf:type ;
+      owl:equivalentProperty
+              rdf:type ;
+      owl:sameAs rdf:type .
+
+mrs:VirtualSwitchService
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , mrs:VirtualSwitchService ;
+      owl:equivalentClass mrs:VirtualSwitchService ;
+      owl:sameAs mrs:VirtualSwitchService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b66 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> .
+
+xsd:unsignedInt
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , xsd:nonNegativeInteger , xsd:unsignedLong , rdfs:Resource , xsd:long , xsd:unsignedInt , xsd:int , xsd:integer ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:unsignedInt ;
+      owl:sameAs xsd:unsignedInt .
+
+_:b67
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b67 .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:topology>
+      a       nml:NetworkObject , _:b5 , owl:Thing , nml:Topology , owl:NamedIndividual , rdfs:Resource , _:b4 , nml:Group ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0> ;
+      nml:hasService <urn:ogf:network:ipnet.maxgigapop.net:2013:routing-service> ;
+      owl:sameAs <urn:ogf:network:ipnet.maxgigapop.net:2013:topology> .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b68 ;
+      owl:sameAs <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3> .
+
+mrs:maximum_iops_4kb_read
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:maximum_iops_4kb_read ;
+      owl:equivalentProperty
+              mrs:maximum_iops_4kb_read ;
+      owl:sameAs mrs:maximum_iops_4kb_read .
+
+_:b1  a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , _:b1 , rdfs:Resource ;
+      owl:equivalentClass _:b1 ;
+      owl:sameAs _:b1 ;
+      owl:unionOf _:b69 .
+
+mrs:disk_gb
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:disk_gb ;
+      owl:equivalentProperty
+              mrs:disk_gb ;
+      owl:sameAs mrs:disk_gb .
+
+nml:Node
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf nml:NetworkObject , _:b5 , owl:Thing , nml:Node , rdfs:Resource , _:b4 ;
+      owl:equivalentClass nml:Node ;
+      owl:sameAs nml:Node .
+
+rdfs:Resource
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource ;
+      owl:equivalentClass owl:Thing , rdfs:Resource ;
+      owl:sameAs rdfs:Resource .
+
+rdfs:Class
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      owl:equivalentClass owl:Class , rdfs:Class ;
+      owl:sameAs rdfs:Class .
+
+_:b48
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b48 ;
+      owl:equivalentClass _:b48 ;
+      owl:sameAs _:b48 ;
+      owl:unionOf _:b59 .
+
+_:b20
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b63 ;
+      owl:sameAs _:b20 .
+
+owl:intersectionOf
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subPropertyOf owl:intersectionOf ;
+      owl:equivalentProperty
+              owl:intersectionOf ;
+      owl:sameAs owl:intersectionOf .
+
+nml:version
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , rdfs:Resource , xsd:dateTime ;
+      rdfs:subPropertyOf nml:version ;
+      owl:equivalentProperty
+              nml:version ;
+      owl:sameAs nml:version .
+
+_:b18
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest _:b60 ;
+      owl:sameAs _:b18 .
+
+nml:address
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:Location , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf nml:address ;
+      owl:equivalentProperty
+              nml:address ;
+      owl:sameAs nml:address .
+
+xsd:anyURI
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:anyURI ;
+      owl:equivalentClass xsd:anyURI ;
+      owl:sameAs xsd:anyURI .
+
+_:b14
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b14 .
+
+_:b39
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b39 .
+
+owl:versionInfo
+      a       owl:Thing , owl:AnnotationProperty , rdfs:Resource ;
+      owl:sameAs owl:versionInfo .
+
+_:b52
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf _:b52 , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass _:b52 ;
+      owl:sameAs _:b52 ;
+      owl:unionOf _:b29 .
+
+owl:NamedIndividual
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , owl:NamedIndividual , rdfs:Resource ;
+      owl:equivalentClass owl:NamedIndividual ;
+      owl:sameAs owl:NamedIndividual .
+
+rdfs:ContainerMembershipProperty
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdf:Property , owl:Thing , rdfs:ContainerMembershipProperty , rdfs:Resource ;
+      owl:equivalentClass rdfs:ContainerMembershipProperty ;
+      owl:sameAs rdfs:ContainerMembershipProperty .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , _:b8 , nml:BidirectionalPort , _:b9 , _:b10 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> .
+
+_:b65
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalPort ;
+      rdf:rest () ;
+      owl:sameAs _:b65 .
+
+_:b70
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalLink ;
+      rdf:rest () ;
+      owl:sameAs _:b70 .
+
+_:b71
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b67 ;
+      owl:sameAs _:b71 .
+
+owl:sameAs
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty , owl:SymmetricProperty ;
+      rdfs:domain owl:Thing , rdfs:Resource ;
+      rdfs:range owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf owl:sameAs ;
+      owl:equivalentProperty
+              owl:sameAs ;
+      owl:sameAs owl:sameAs .
+
+_:b72
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "550-569,3020-3030,3100-3109,3200-3219"^^xsd:string ;
+      owl:sameAs _:b72 .
+
+_:b73
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest _:b74 ;
+      owl:sameAs _:b73 .
+
+xsd:positiveInteger
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf xsd:positiveInteger , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass xsd:positiveInteger ;
+      owl:sameAs xsd:positiveInteger .
+
+_:b75
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b76 ;
+      owl:sameAs _:b75 .
+
+nml:providesPort
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 , nml:Service ;
+      rdfs:range owl:Thing , _:b12 , rdfs:Resource , _:b21 ;
+      rdfs:subPropertyOf nml:providesPort ;
+      owl:equivalentProperty
+              nml:providesPort ;
+      owl:sameAs nml:providesPort .
+
+_:b77
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b41 ;
+      owl:sameAs _:b77 .
+
+rdf:List
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdf:List , rdfs:Resource ;
+      owl:equivalentClass rdf:List ;
+      owl:sameAs rdf:List .
+
+_:b45
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , _:b45 , rdfs:Resource ;
+      owl:equivalentClass _:b45 ;
+      owl:sameAs _:b45 ;
+      owl:unionOf _:b78 .
+
+_:b79
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Location ;
+      rdf:rest _:b80 ;
+      owl:sameAs _:b79 .
+
+nml:serviceProvidedBy
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 , nml:Service ;
+      rdfs:range nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:subPropertyOf nml:serviceProvidedBy ;
+      owl:equivalentProperty
+              nml:serviceProvidedBy ;
+      owl:sameAs nml:serviceProvidedBy .
+
+_:b81
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest _:b37 ;
+      owl:sameAs _:b81 .
+
+nml:hasLink
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 , nml:Group ;
+      rdfs:range _:b51 , _:b52 , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf nml:hasLink ;
+      owl:equivalentProperty
+              nml:hasLink ;
+      owl:sameAs nml:hasLink .
+
+xsd:long
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:long , xsd:integer ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:long ;
+      owl:sameAs xsd:long .
+
+rdf:first
+      a       rdf:Property , owl:FunctionalProperty , owl:Thing , rdfs:Resource ;
+      rdfs:domain owl:Thing , rdf:List , rdfs:Resource ;
+      rdfs:subPropertyOf rdf:first ;
+      owl:equivalentProperty
+              rdf:first ;
+      owl:sameAs rdf:first .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:switching-service>
+      a       _:b5 , nml:NetworkObject , owl:Thing , _:b1 , owl:NamedIndividual , nml:SwitchingService , _:b7 , rdfs:Resource , _:b4 , nml:Service ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:switching-service> .
+
+_:b69
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b82 ;
+      owl:sameAs _:b69 .
+
+_:b49
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b49 ;
+      owl:equivalentClass _:b49 ;
+      owl:sameAs _:b49 ;
+      owl:unionOf _:b83 .
+
+nml:next
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain owl:Thing , nml:ListItem , rdfs:Resource ;
+      rdfs:range owl:Thing , nml:ListItem , rdfs:Resource ;
+      rdfs:subPropertyOf nml:next ;
+      owl:equivalentProperty
+              nml:next ;
+      owl:sameAs nml:next .
+
+nml:long
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain _:b5 , nml:Location , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , xsd:float , rdfs:Resource ;
+      rdfs:subPropertyOf nml:long ;
+      owl:equivalentProperty
+              nml:long ;
+      owl:sameAs nml:long .
+
+_:b84
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b85 ;
+      owl:sameAs _:b84 .
+
+_:b86
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b86 , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass _:b86 ;
+      owl:sameAs _:b86 ;
+      owl:unionOf _:b71 .
+
+nml:AdaptationService
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b5 , nml:NetworkObject , nml:AdaptationService , owl:Thing , rdfs:Resource , _:b87 , _:b4 , _:b88 , nml:Service ;
+      owl:equivalentClass nml:AdaptationService ;
+      owl:sameAs nml:AdaptationService .
+
+_:b89
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Location ;
+      rdf:rest _:b26 ;
+      owl:sameAs _:b89 .
+
+owl:Property
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , owl:Property , rdfs:Resource ;
+      owl:equivalentClass owl:Property ;
+      owl:sameAs owl:Property .
+
+owl:incompatibleWith
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain owl:Ontology , owl:Thing , rdfs:Resource ;
+      rdfs:range owl:Ontology , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf owl:incompatibleWith ;
+      owl:equivalentProperty
+              owl:incompatibleWith ;
+      owl:sameAs owl:incompatibleWith .
+
+mrs:StorageService
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , mrs:StorageService , rdfs:Resource ;
+      owl:equivalentClass mrs:StorageService ;
+      owl:sameAs mrs:StorageService .
+
+_:b90
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11,313,314"^^xsd:string ;
+      owl:sameAs _:b90 .
+
+_:b54
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b54 ;
+      owl:equivalentClass _:b54 ;
+      owl:sameAs _:b54 ;
+      owl:unionOf _:b91 .
+
+_:b74
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest _:b92 ;
+      owl:sameAs _:b74 .
+
+_:b93
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b94 ;
+      owl:sameAs _:b93 .
+
+_:b95
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest _:b96 ;
+      owl:sameAs _:b95 .
+
+nml:hasTopology
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range _:b5 , nml:NetworkObject , owl:Thing , nml:Topology , rdfs:Resource , _:b4 , nml:Group ;
+      rdfs:subPropertyOf nml:hasTopology ;
+      owl:equivalentProperty
+              nml:hasTopology ;
+      owl:sameAs nml:hasTopology .
+
+mrs:HypervisorBypassInterfaceService
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , mrs:HypervisorBypassInterfaceService ;
+      owl:equivalentClass mrs:HypervisorBypassInterfaceService ;
+      owl:sameAs mrs:HypervisorBypassInterfaceService .
+
+_:b46
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b46 , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass _:b46 ;
+      owl:sameAs _:b46 ;
+      owl:unionOf _:b75 .
+
+mrs:hasBenchmark
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:hasBenchmark ;
+      owl:equivalentProperty
+              mrs:hasBenchmark ;
+      owl:sameAs mrs:hasBenchmark .
+
+_:b68
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "550-569,3020-3030,3100-3109,3200-3219"^^xsd:string ;
+      owl:sameAs _:b68 .
+
+rdfs:seeAlso
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf rdfs:seeAlso ;
+      owl:equivalentProperty
+              rdfs:seeAlso ;
+      owl:sameAs rdfs:seeAlso .
+
+_:b61
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:SwitchingService ;
+      rdf:rest () ;
+      owl:sameAs _:b61 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , rdfs:Resource , nml:Node , _:b4 ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b97 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0> .
+
+_:b4  a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b4 ;
+      owl:equivalentClass _:b4 ;
+      owl:sameAs _:b4 ;
+      owl:unionOf _:b79 .
+
+_:b98
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b81 ;
+      owl:sameAs _:b98 .
+
+_:b82
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest _:b99 ;
+      owl:sameAs _:b82 .
+
+rdf:XMLLiteral
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , rdf:XMLLiteral ;
+      owl:equivalentClass rdf:XMLLiteral ;
+      owl:sameAs rdf:XMLLiteral .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:sriov-vm-fex>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , rdfs:Resource , _:b4 , nml:Service , mrs:HypervisorBypassInterfaceService ;
+      mrs:providesVNic <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:sriov-vm-fex> .
+
+nml:unlocode
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain _:b5 , nml:Location , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , rdfs:Resource , xsd:string ;
+      rdfs:subPropertyOf nml:unlocode ;
+      owl:equivalentProperty
+              nml:unlocode ;
+      owl:sameAs nml:unlocode .
+
+xsd:string
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:string ;
+      owl:disjointWith xsd:duration , xsd:unsignedShort , xsd:float , xsd:byte , xsd:unsignedLong , xsd:unsignedByte , xsd:long , xsd:date , xsd:nonNegativeInteger , xsd:time , xsd:nonPositiveInteger , xsd:boolean , xsd:unsignedInt , xsd:int , xsd:decimal , xsd:dateTime , xsd:short , xsd:integer ;
+      owl:equivalentClass xsd:string ;
+      owl:sameAs xsd:string .
+
+_:b83
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b100 ;
+      owl:sameAs _:b83 .
+
+nml:NetworkObject
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      owl:equivalentClass nml:NetworkObject ;
+      owl:sameAs nml:NetworkObject .
+
+_:b100
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b100 .
+
+_:b6  a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf _:b6 , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass _:b6 ;
+      owl:sameAs _:b6 ;
+      owl:unionOf _:b84 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b64 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> .
+
+nml:encoding
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain owl:Thing , _:b1 , _:b7 , rdfs:Resource ;
+      rdfs:range owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf nml:encoding ;
+      owl:equivalentProperty
+              nml:encoding ;
+      owl:sameAs nml:encoding .
+
+_:b101
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b101 .
+
+nml:existsDuring
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , rdfs:Resource , nml:Lifetime ;
+      rdfs:subPropertyOf nml:existsDuring ;
+      owl:equivalentProperty
+              nml:existsDuring ;
+      owl:sameAs nml:existsDuring .
+
+mrs:BlockStorageService
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , mrs:BlockStorageService , rdfs:Resource ;
+      owl:equivalentClass mrs:BlockStorageService ;
+      owl:sameAs mrs:BlockStorageService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , rdfs:Resource , nml:Node , _:b4 ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:10> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:1-4> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:switching-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:routing-service> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> .
+
+_:b7  a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , _:b7 , rdfs:Resource ;
+      owl:equivalentClass _:b7 ;
+      owl:sameAs _:b7 ;
+      owl:unionOf _:b77 .
+
+_:b91
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b102 ;
+      owl:sameAs _:b91 .
+
+_:b103
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b103 .
+
+rdf:Bag
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdfs:Container , owl:Thing , rdfs:Resource , rdf:Bag ;
+      owl:equivalentClass rdf:Bag ;
+      owl:sameAs rdf:Bag .
+
+_:b96
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest _:b104 ;
+      owl:sameAs _:b96 .
+
+_:b92
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalPort ;
+      rdf:rest _:b62 ;
+      owl:sameAs _:b92 .
+
+_:b35
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b35 ;
+      owl:equivalentClass _:b35 ;
+      owl:sameAs _:b35 ;
+      owl:unionOf _:b93 .
+
+nml:DeadaptationService
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b87 , _:b4 , _:b88 , nml:Service , nml:DeadaptationService ;
+      owl:equivalentClass nml:DeadaptationService ;
+      owl:sameAs nml:DeadaptationService .
+
+_:b105
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b105 .
+
+owl:Ontology
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Ontology , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass owl:Ontology ;
+      owl:sameAs owl:Ontology .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , rdfs:Resource , nml:Node , _:b4 ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-nova> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:sriov-vm-fex> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> .
+
+_:b106
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LabelGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b106 .
+
+_:b107
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b107 .
+
+_:b108
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalLink ;
+      rdf:rest () ;
+      owl:sameAs _:b108 .
+
+nml:SwitchingService
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b5 , nml:NetworkObject , owl:Thing , _:b1 , nml:SwitchingService , rdfs:Resource , _:b7 , _:b4 , nml:Service ;
+      owl:equivalentClass nml:SwitchingService ;
+      owl:sameAs nml:SwitchingService .
+
+rdfs:subPropertyOf
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:range rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf rdfs:subPropertyOf ;
+      owl:equivalentProperty
+              rdfs:subPropertyOf ;
+      owl:sameAs rdfs:subPropertyOf .
+
+nml:value
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain owl:Thing , rdfs:Resource , _:b23 , nml:Label , _:b24 ;
+      rdfs:range owl:Thing , rdfs:Resource , xsd:string ;
+      rdfs:subPropertyOf nml:value ;
+      owl:equivalentProperty
+              nml:value ;
+      owl:sameAs nml:value .
+
+owl:oneOf
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subPropertyOf owl:oneOf ;
+      owl:equivalentProperty
+              owl:oneOf ;
+      owl:sameAs owl:oneOf .
+
+_:b99
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b109 ;
+      owl:sameAs _:b99 .
+
+<http://www.maxgigapop.net/mrs/2013/topology#>
+      a       owl:Ontology , owl:Thing , rdfs:Resource ;
+      rdfs:label "NML-MRS Description of the MAX Research Infrastructure" ;
+      owl:sameAs <http://www.maxgigapop.net/mrs/2013/topology#> .
+
+_:b110
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b110 .
+
+_:b111
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b101 ;
+      owl:sameAs _:b111 .
+
+rdf:Alt
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdfs:Container , rdf:Alt , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass rdf:Alt ;
+      owl:sameAs rdf:Alt .
+
+nml:hasNode
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range nml:NetworkObject , _:b5 , owl:Thing , nml:Node , rdfs:Resource , _:b4 ;
+      rdfs:subPropertyOf nml:hasNode ;
+      owl:equivalentProperty
+              nml:hasNode ;
+      owl:sameAs nml:hasNode .
+
+_:b47
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf _:b47 , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass _:b47 ;
+      owl:sameAs _:b47 ;
+      owl:unionOf _:b98 .
+
+_:b57
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b57 .
+
+_:b112
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b112 .
+
+_:b53
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , _:b53 , rdfs:Resource ;
+      owl:equivalentClass _:b53 ;
+      owl:sameAs _:b53 ;
+      owl:unionOf _:b113 .
+
+owl:InverseFunctionalProperty
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdf:Property , owl:Thing , owl:InverseFunctionalProperty , rdfs:Resource , owl:ObjectProperty ;
+      owl:equivalentClass owl:InverseFunctionalProperty ;
+      owl:sameAs owl:InverseFunctionalProperty .
+
+nml:labelSwapping
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , _:b1 , nml:SwitchingService , _:b7 , rdfs:Resource , _:b4 , nml:Service ;
+      rdfs:range owl:Thing , rdfs:Resource , xsd:boolean ;
+      rdfs:subPropertyOf nml:labelSwapping ;
+      owl:equivalentProperty
+              nml:labelSwapping ;
+      owl:sameAs nml:labelSwapping .
+
+_:b44
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalLink ;
+      rdf:rest () ;
+      owl:sameAs _:b44 .
+
+nml:isSink
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , rdfs:Resource , _:b49 , _:b55 ;
+      rdfs:subPropertyOf nml:isSink ;
+      owl:equivalentProperty
+              nml:isSink ;
+      owl:sameAs nml:isSink .
+
+nml:BidirectionalPort
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , _:b5 , nml:NetworkObject , _:b6 , owl:Thing , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      owl:equivalentClass nml:BidirectionalPort ;
+      owl:sameAs nml:BidirectionalPort .
+
+nml:hasBidirectionalLink
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 , nml:Group ;
+      rdfs:range _:b46 , nml:NetworkObject , _:b5 , _:b6 , _:b47 , owl:Thing , nml:BidirectionalLink , _:b2 , rdfs:Resource , _:b4 , _:b8 , nml:Group , _:b10 ;
+      rdfs:subPropertyOf nml:hasBidirectionalLink ;
+      owl:equivalentProperty
+              nml:hasBidirectionalLink ;
+      owl:sameAs nml:hasBidirectionalLink .
+
+owl:Nothing
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf _:b12 , xsd:float , _:b15 , _:b45 , _:b19 , _:b49 , _:b24 , nml:Group , owl:Restriction , _:b86 , nml:AdaptationService , owl:DatatypeProperty , _:b21 , _:b54 , nml:PortGroup , rdfs:Datatype , _:b9 , nml:LinkGroup , rdfs:Container , _:b46 , nml:Location , _:b3 , _:b87 , owl:ObjectProperty , _:b4 , _:b23 , xsd:string , rdf:Seq , nml:NetworkObject , _:b50 , nml:LabelGroup , _:b6 , nml:Port , owl:Thing , owl:OntologyProperty , nml:BidirectionalLink , owl:TransitiveProperty , nml:ListItem , _:b7 , nml:Link , _:b34 , rdf:Bag , _:b35 , nml:DeadaptationService , nml:Lifetime , owl:FunctionalProperty , nml:SwitchingService , nml:Label , rdf:Alt , _:b47 , _:b53 , owl:InverseFunctionalProperty , nml:BidirectionalPort , owl:Nothing , xsd:dateTime , _:b10 , nml:Service , _:b1 , _:b2 , rdfs:Resource , owl:Class , nml:Node , _:b88 , rdfs:Class , _:b48 , owl:SymmetricProperty , rdf:Property , _:b5 , _:b51 , _:b52 , nml:Topology , rdfs:ContainerMembershipProperty , _:b8 , xsd:boolean , _:b55 ;
+      owl:equivalentClass owl:Nothing ;
+      owl:sameAs owl:Nothing .
+
+_:b102
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b102 .
+
+nml:Service
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 , nml:Service ;
+      owl:equivalentClass nml:Service ;
+      owl:sameAs nml:Service .
+
+_:b10
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b10 ;
+      owl:equivalentClass _:b10 ;
+      owl:sameAs _:b10 ;
+      owl:unionOf _:b114 .
+
+_:b115
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b115 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , rdfs:Resource , _:b4 , mrs:VirtualSwitchService , nml:Service ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:ovs> ;
+      nml:providesPort <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron> .
+
+_:b78
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b105 ;
+      owl:sameAs _:b78 .
+
+owl:priorVersion
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain owl:Ontology , owl:Thing , rdfs:Resource ;
+      rdfs:range owl:Ontology , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf owl:priorVersion ;
+      owl:equivalentProperty
+              owl:priorVersion ;
+      owl:sameAs owl:priorVersion .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b116 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> ;
+      owl:sameAs <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0> .
+
+_:b97
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b97 .
+
+_:b25
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Label ;
+      rdf:rest _:b106 ;
+      owl:sameAs _:b25 .
+
+_:b2  a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , _:b2 , rdfs:Resource ;
+      owl:equivalentClass _:b2 ;
+      owl:sameAs _:b2 ;
+      owl:unionOf _:b73 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-nova>
+      a       _:b5 , nml:NetworkObject , owl:Thing , mrs:HypervisorService , owl:NamedIndividual , rdfs:Resource , _:b4 , nml:Service ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-nova> .
+
+_:b109
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest _:b117 ;
+      owl:sameAs _:b109 .
+
+_:b13
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b110 ;
+      owl:sameAs _:b13 .
+
+_:b51
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b51 , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass _:b51 ;
+      owl:sameAs _:b51 ;
+      owl:unionOf _:b111 .
+
+_:b5  a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b5 , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass _:b5 ;
+      owl:sameAs _:b5 ;
+      owl:unionOf _:b89 .
+
+xsd:date
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf xsd:date , owl:Thing , rdfs:Resource ;
+      owl:disjointWith xsd:duration , xsd:unsignedShort , xsd:float , xsd:byte , xsd:unsignedLong , xsd:unsignedByte , xsd:long , xsd:string , xsd:nonNegativeInteger , xsd:time , xsd:nonPositiveInteger , xsd:boolean , xsd:unsignedInt , xsd:int , xsd:decimal , xsd:dateTime , xsd:short , xsd:integer ;
+      owl:equivalentClass xsd:date ;
+      owl:sameAs xsd:date .
+
+_:b118
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LabelGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b118 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b31 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12> .
+
+_:b16
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b112 ;
+      owl:sameAs _:b16 .
+
+_:b113
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b33 ;
+      owl:sameAs _:b113 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:topology>
+      a       nml:NetworkObject , _:b5 , owl:Thing , nml:Topology , owl:NamedIndividual , rdfs:Resource , _:b4 , nml:Group ;
+      nml:hasNode <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:topology> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:ovs>
+      a       _:b5 , nml:NetworkObject , owl:Thing , _:b1 , owl:NamedIndividual , nml:SwitchingService , _:b7 , rdfs:Resource , _:b4 , nml:Service ;
+      nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public> ;
+      nml:labelSwapping "false"^^xsd:boolean ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:ovs> .
+
+_:b8  a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b8 ;
+      owl:equivalentClass _:b8 ;
+      owl:sameAs _:b8 ;
+      owl:unionOf _:b95 .
+
+_:b119
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b119 .
+
+_:b55
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b55 ;
+      owl:equivalentClass _:b55 ;
+      owl:sameAs _:b55 ;
+      owl:unionOf _:b120 .
+
+_:b121
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b122 ;
+      owl:sameAs _:b121 .
+
+_:b120
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b123 ;
+      owl:sameAs _:b120 .
+
+xsd:float
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , xsd:float , rdfs:Resource ;
+      owl:disjointWith xsd:duration , xsd:unsignedShort , xsd:byte , xsd:unsignedLong , xsd:unsignedByte , xsd:long , xsd:string , xsd:date , xsd:nonNegativeInteger , xsd:time , xsd:nonPositiveInteger , xsd:boolean , xsd:unsignedInt , xsd:int , xsd:decimal , xsd:dateTime , xsd:short , xsd:integer ;
+      owl:equivalentClass xsd:float ;
+      owl:sameAs xsd:float .
+
+owl:backwardCompatibleWith
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain owl:Ontology , owl:Thing , rdfs:Resource ;
+      rdfs:range owl:Ontology , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf owl:backwardCompatibleWith ;
+      owl:equivalentProperty
+              owl:backwardCompatibleWith ;
+      owl:sameAs owl:backwardCompatibleWith .
+
+xsd:unsignedLong
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , xsd:nonNegativeInteger , xsd:unsignedLong , rdfs:Resource , xsd:long , xsd:integer ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:unsignedLong ;
+      owl:sameAs xsd:unsignedLong .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b124 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> .
+
+_:b125
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Label ;
+      rdf:rest _:b118 ;
+      owl:sameAs _:b125 .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , mrs:StorageService , rdfs:Resource , _:b4 , nml:Service ;
+      mrs:disk_gb "110592"^^xsd:long ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service> .
+
+xsd:hexBinary
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf xsd:hexBinary , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass xsd:hexBinary ;
+      owl:sameAs xsd:hexBinary .
+
+mrs:providesVNic
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:providesVNic ;
+      owl:equivalentProperty
+              mrs:providesVNic ;
+      owl:sameAs mrs:providesVNic .
+
+nml:adaptationFunction
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain owl:Thing , _:b87 , rdfs:Resource , _:b88 ;
+      rdfs:range owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf nml:adaptationFunction ;
+      owl:equivalentProperty
+              nml:adaptationFunction ;
+      owl:sameAs nml:adaptationFunction .
+
+owl:Restriction
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Restriction , owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      owl:equivalentClass owl:Restriction ;
+      owl:sameAs owl:Restriction .
+
+_:b94
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b94 .
+
+rdfs:Literal
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Literal , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass rdfs:Literal ;
+      owl:sameAs rdfs:Literal .
+
+xsd:time
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , xsd:time , rdfs:Resource ;
+      owl:disjointWith xsd:duration , xsd:unsignedShort , xsd:float , xsd:byte , xsd:unsignedLong , xsd:unsignedByte , xsd:long , xsd:string , xsd:date , xsd:nonNegativeInteger , xsd:nonPositiveInteger , xsd:boolean , xsd:unsignedInt , xsd:int , xsd:decimal , xsd:dateTime , xsd:short , xsd:integer ;
+      owl:equivalentClass xsd:time ;
+      owl:sameAs xsd:time .
+
+xsd:gYearMonth
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , xsd:gYearMonth , rdfs:Resource ;
+      owl:equivalentClass xsd:gYearMonth ;
+      owl:sameAs xsd:gYearMonth .
+
+rdfs:comment
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:range rdfs:Literal , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf rdfs:comment ;
+      owl:equivalentProperty
+              rdfs:comment ;
+      owl:sameAs rdfs:comment .
+
+rdfs:member
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf rdfs:member ;
+      owl:sameAs rdfs:member .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , rdfs:Resource , nml:Node , _:b4 ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:17-20> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:switching-service> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw> .
+
+owl:equivalentProperty
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf owl:equivalentProperty ;
+      owl:equivalentProperty
+              owl:equivalentProperty ;
+      owl:sameAs owl:equivalentProperty .
+
+mrs:localAddress
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:localAddress ;
+      owl:equivalentProperty
+              mrs:localAddress ;
+      owl:sameAs mrs:localAddress .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b90 ;
+      nml:isAlias <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:xe-6-0-0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> .
+
+_:b85
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Port ;
+      rdf:rest _:b126 ;
+      owl:sameAs _:b85 .
+
+_:b11
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11"^^xsd:string ;
+      owl:sameAs _:b11 .
+
+rdfs:isDefinedBy
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf rdfs:isDefinedBy , rdfs:seeAlso ;
+      owl:equivalentProperty
+              rdfs:isDefinedBy ;
+      owl:sameAs rdfs:isDefinedBy .
+
+rdf:Statement
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdf:Statement , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass rdf:Statement ;
+      owl:sameAs rdf:Statement .
+
+_:b114
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b27 ;
+      owl:sameAs _:b114 .
+
+nml:end
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain owl:Thing , rdfs:Resource , nml:Lifetime ;
+      rdfs:range owl:Thing , rdfs:Resource , xsd:dateTime ;
+      rdfs:subPropertyOf nml:end ;
+      owl:equivalentProperty
+              nml:end ;
+      owl:sameAs nml:end .
+
+xsd:byte
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , xsd:byte , rdfs:Resource , xsd:long , xsd:int , xsd:short , xsd:integer ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:byte ;
+      owl:sameAs xsd:byte .
+
+_:b3  a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , _:b3 , rdfs:Resource ;
+      owl:equivalentClass _:b3 ;
+      owl:sameAs _:b3 ;
+      owl:unionOf _:b121 .
+
+_:b87
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b87 ;
+      owl:equivalentClass _:b87 ;
+      owl:sameAs _:b87 ;
+      owl:unionOf _:b127 .
+
+owl:ObjectProperty
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      owl:equivalentClass owl:ObjectProperty ;
+      owl:sameAs owl:ObjectProperty .
+
+_:b128
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:DeadaptationService ;
+      rdf:rest () ;
+      owl:sameAs _:b128 .
+
+_:b23
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b23 ;
+      owl:equivalentClass _:b23 ;
+      owl:sameAs _:b23 ;
+      owl:unionOf _:b125 .
+
+<http://schemas.ogf.org/nml/2012/10/ethernet#vlan>
+      a       owl:Thing , rdfs:Resource ;
+      owl:sameAs <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> .
+
+nml:start
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain owl:Thing , rdfs:Resource , nml:Lifetime ;
+      rdfs:range owl:Thing , rdfs:Resource , xsd:dateTime ;
+      rdfs:subPropertyOf nml:start ;
+      owl:equivalentProperty
+              nml:start ;
+      owl:sameAs nml:start .
+
+_:b117
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalPort ;
+      rdf:rest _:b40 ;
+      owl:sameAs _:b117 .
+
+_:b50
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf _:b50 , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass _:b50 ;
+      owl:sameAs _:b50 ;
+      owl:unionOf _:b129 .
+
+()    a       owl:Thing , rdf:List , rdfs:Resource ;
+      owl:sameAs () .
+
+nml:hasService
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 , nml:Service ;
+      rdfs:subPropertyOf nml:hasService ;
+      owl:equivalentProperty
+              nml:hasService ;
+      owl:sameAs nml:hasService .
+
+nml:Port
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b1 , _:b12 , _:b15 , _:b45 , _:b3 , rdfs:Resource , _:b4 , _:b19 , _:b5 , nml:NetworkObject , _:b6 , _:b86 , owl:Thing , nml:Port , _:b21 , _:b7 , _:b34 , _:b9 , _:b35 , _:b10 ;
+      owl:equivalentClass nml:Port ;
+      owl:sameAs nml:Port .
+
+mrs:average_iops_4kb_write
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:average_iops_4kb_write ;
+      owl:equivalentProperty
+              mrs:average_iops_4kb_write ;
+      owl:sameAs mrs:average_iops_4kb_write .
+
+mrs:HypervisorService
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , mrs:HypervisorService , rdfs:Resource ;
+      owl:equivalentClass mrs:HypervisorService ;
+      owl:sameAs mrs:HypervisorService .
+
+nml:lat
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain _:b5 , nml:Location , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , xsd:float , rdfs:Resource ;
+      rdfs:subPropertyOf nml:lat ;
+      owl:equivalentProperty
+              nml:lat ;
+      owl:sameAs nml:lat .
+
+owl:TransitiveProperty
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdf:Property , owl:Thing , owl:TransitiveProperty , rdfs:Resource , owl:ObjectProperty ;
+      owl:equivalentClass owl:TransitiveProperty ;
+      owl:sameAs owl:TransitiveProperty .
+
+_:b126
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalPort ;
+      rdf:rest _:b108 ;
+      owl:sameAs _:b126 .
+
+nml:Link
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf _:b46 , _:b1 , rdfs:Resource , _:b4 , _:b48 , _:b49 , _:b5 , nml:NetworkObject , _:b51 , _:b50 , _:b6 , _:b47 , _:b52 , owl:Thing , _:b53 , _:b7 , nml:Link , _:b54 , _:b10 , _:b55 ;
+      owl:equivalentClass nml:Link ;
+      owl:sameAs nml:Link .
+
+xsd:int
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:long , xsd:int , xsd:integer ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:int ;
+      owl:sameAs xsd:int .
+
+nml:implementedBy
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:subPropertyOf nml:implementedBy ;
+      owl:equivalentProperty
+              nml:implementedBy ;
+      owl:sameAs nml:implementedBy .
+
+nml:Lifetime
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , nml:Lifetime ;
+      owl:equivalentClass nml:Lifetime ;
+      owl:sameAs nml:Lifetime .
+
+nml:locatedAt
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range _:b5 , nml:Location , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:subPropertyOf nml:locatedAt ;
+      owl:equivalentProperty
+              nml:locatedAt ;
+      owl:sameAs nml:locatedAt .
+
+_:b130
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalPort ;
+      rdf:rest () ;
+      owl:sameAs _:b130 .
+
+_:b131
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:AdaptationService ;
+      rdf:rest _:b128 ;
+      owl:sameAs _:b131 .
+
+_:b127
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:AdaptationService ;
+      rdf:rest _:b132 ;
+      owl:sameAs _:b127 .
+
+nml:Label
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b23 , nml:Label , _:b24 ;
+      owl:equivalentClass nml:Label ;
+      owl:sameAs nml:Label .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , rdfs:Resource , nml:Node , _:b4 ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-3-eth0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0> ;
+      nml:hasService <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph> .
+
+_:b129
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:Link ;
+      rdf:rest _:b133 ;
+      owl:sameAs _:b129 .
+
+rdfs:subClassOf
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:range owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subPropertyOf rdfs:subClassOf ;
+      owl:equivalentProperty
+              rdfs:subClassOf ;
+      owl:sameAs rdfs:subClassOf .
+
+<urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:route-to-wan>
+      a       owl:Thing , mrs:Route , rdfs:Resource ;
+      mrs:nextHop _:b134 ;
+      mrs:prefix "0.0.0.0/0"^^xsd:string ;
+      owl:sameAs <urn:ogf:network:ipnet.maxgigapop.net:2013:clpk-t640:route-to-wan> .
+
+nml:item
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain owl:Thing , nml:ListItem , rdfs:Resource ;
+      rdfs:range owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf nml:item ;
+      owl:equivalentProperty
+              nml:item ;
+      owl:sameAs nml:item .
+
+xsd:short
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:long , xsd:int , xsd:short , xsd:integer ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:short ;
+      owl:sameAs xsd:short .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1>
+      a       owl:Thing , owl:NamedIndividual , rdfs:Resource , mrs:POSIX_IOBenchmark ;
+      mrs:average_iops_4kb_read
+              "255000"^^xsd:long ;
+      mrs:average_iops_4kb_write
+              "255000"^^xsd:long ;
+      mrs:maximum_iops_4kb_read
+              "289000"^^xsd:long ;
+      mrs:maximum_iops_4kb_write
+              "289000"^^xsd:long ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1> .
+
+nml:values
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      rdfs:range owl:Thing , rdfs:Resource , xsd:string ;
+      rdfs:subPropertyOf nml:values ;
+      owl:equivalentProperty
+              nml:values ;
+      owl:sameAs nml:values .
+
+_:b122
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:PortGroup ;
+      rdf:rest _:b130 ;
+      owl:sameAs _:b122 .
+
+_:b88
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , _:b88 ;
+      owl:equivalentClass _:b88 ;
+      owl:sameAs _:b88 ;
+      owl:unionOf _:b131 .
+
+rdf:predicate
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain rdf:Statement , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf rdf:predicate ;
+      owl:equivalentProperty
+              rdf:predicate ;
+      owl:sameAs rdf:predicate .
+
+_:b132
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:DeadaptationService ;
+      rdf:rest () ;
+      owl:sameAs _:b132 .
+
+owl:SymmetricProperty
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty , owl:SymmetricProperty ;
+      owl:equivalentClass owl:SymmetricProperty ;
+      owl:sameAs owl:SymmetricProperty .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g2>
+      a       _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g2> .
+
+xsd:base64Binary
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:base64Binary ;
+      owl:equivalentClass xsd:base64Binary ;
+      owl:sameAs xsd:base64Binary .
+
+rdf:Property
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdf:Property , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass rdf:Property ;
+      owl:sameAs rdf:Property .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g1>
+      a       _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:9-12> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g1> .
+
+_:b76
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest _:b70 ;
+      owl:sameAs _:b76 .
+
+_:b133
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b133 .
+
+nml:hasOutboundPort
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range _:b86 , owl:Thing , rdfs:Resource , _:b19 ;
+      rdfs:subPropertyOf nml:hasOutboundPort ;
+      owl:equivalentProperty
+              nml:hasOutboundPort ;
+      owl:sameAs nml:hasOutboundPort .
+
+_:b80
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:NetworkObject ;
+      rdf:rest () ;
+      owl:sameAs _:b80 .
+
+nml:Topology
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b5 , nml:NetworkObject , owl:Thing , nml:Topology , rdfs:Resource , _:b4 , nml:Group ;
+      owl:equivalentClass nml:Topology ;
+      owl:sameAs nml:Topology .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , _:b8 , nml:BidirectionalPort , _:b9 , _:b10 ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1> .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b72 ;
+      owl:sameAs <urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1> .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b135 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:1-4> .
+
+xsd:integer
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:decimal , xsd:integer ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:integer ;
+      owl:sameAs xsd:integer .
+
+_:b135
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b135 .
+
+nml:providesLink
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b5 , nml:NetworkObject , owl:Thing , rdfs:Resource , _:b4 , nml:Service ;
+      rdfs:range _:b46 , _:b47 , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf nml:providesLink ;
+      owl:equivalentProperty
+              nml:providesLink ;
+      owl:sameAs nml:providesLink .
+
+nml:name
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , rdfs:Resource , xsd:string ;
+      rdfs:subPropertyOf nml:name ;
+      owl:equivalentProperty
+              nml:name ;
+      owl:sameAs nml:name .
+
+_:b116
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "11,313,314"^^xsd:string ;
+      owl:sameAs _:b116 .
+
+_:b124
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2-4094"^^xsd:string ;
+      owl:sameAs _:b124 .
+
+rdfs:label
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:range rdfs:Literal , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf rdfs:label ;
+      owl:equivalentProperty
+              rdfs:label ;
+      owl:sameAs rdfs:label .
+
+nml:Group
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 , nml:Group ;
+      owl:equivalentClass nml:Group ;
+      owl:sameAs nml:Group .
+
+mrs:providesRoute
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:providesRoute ;
+      owl:equivalentProperty
+              mrs:providesRoute ;
+      owl:sameAs mrs:providesRoute .
+
+nml:isAlias
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty , owl:SymmetricProperty ;
+      rdfs:domain nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:subPropertyOf nml:isAlias ;
+      owl:equivalentProperty
+              nml:isAlias ;
+      owl:sameAs nml:isAlias .
+
+xsd:nonNegativeInteger
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , xsd:nonNegativeInteger , rdfs:Resource , xsd:integer ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:nonNegativeInteger ;
+      owl:sameAs xsd:nonNegativeInteger .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , _:b8 , nml:BidirectionalPort , _:b9 , _:b10 ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static3> , <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static2> ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:5-8> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g2> .
+
+xsd:nonPositiveInteger
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:nonPositiveInteger ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:nonPositiveInteger ;
+      owl:sameAs xsd:nonPositiveInteger .
+
+nml:belongsTo
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:subPropertyOf nml:belongsTo ;
+      owl:equivalentProperty
+              nml:belongsTo ;
+      owl:sameAs nml:belongsTo .
+
+owl:onProperty
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain owl:Restriction , owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:range owl:Thing , owl:Property , rdfs:Resource ;
+      rdfs:subPropertyOf owl:onProperty ;
+      owl:equivalentProperty
+              owl:onProperty ;
+      owl:sameAs owl:onProperty .
+
+nml:isSource
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , _:b53 , rdfs:Resource , _:b48 ;
+      rdfs:subPropertyOf nml:isSource ;
+      owl:equivalentProperty
+              nml:isSource ;
+      owl:sameAs nml:isSource .
+
+mrs:RoutingService
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , mrs:RoutingService ;
+      owl:equivalentClass mrs:RoutingService ;
+      owl:sameAs mrs:RoutingService .
+
+xsd:decimal
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:decimal ;
+      owl:disjointWith xsd:date , xsd:duration , xsd:float , xsd:time , xsd:boolean , xsd:string , xsd:dateTime ;
+      owl:equivalentClass xsd:decimal ;
+      owl:sameAs xsd:decimal .
+
+nml:PortGroup
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf _:b12 , _:b1 , _:b2 , _:b15 , _:b45 , _:b3 , rdfs:Resource , _:b4 , _:b19 , nml:Group , _:b5 , nml:NetworkObject , _:b86 , owl:Thing , _:b21 , _:b7 , _:b8 , _:b34 , nml:PortGroup , _:b35 , _:b9 ;
+      owl:equivalentClass nml:PortGroup ;
+      owl:sameAs nml:PortGroup .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b115 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> .
+
+nml:LinkGroup
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf _:b46 , _:b1 , _:b2 , rdfs:Resource , _:b4 , _:b48 , _:b49 , nml:Group , nml:NetworkObject , _:b5 , _:b51 , _:b50 , _:b47 , _:b52 , owl:Thing , _:b53 , _:b7 , _:b8 , _:b54 , nml:LinkGroup , _:b55 ;
+      owl:equivalentClass nml:LinkGroup ;
+      owl:sameAs nml:LinkGroup .
+
+rdfs:Container
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdfs:Container , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass rdfs:Container ;
+      owl:sameAs rdfs:Container .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:vm-fex:static0> .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b107 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> ;
+      owl:sameAs <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> .
+
+nml:  a       owl:Ontology , owl:Thing , rdfs:Resource ;
+      rdfs:label "NML Schema" ;
+      owl:sameAs nml: .
+
+_:b66
+      a       nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+      nml:values "2000-2099"^^xsd:string ;
+      owl:sameAs _:b66 .
+
+rdf:object
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain rdf:Statement , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf rdf:object ;
+      owl:equivalentProperty
+              rdf:object ;
+      owl:sameAs rdf:object .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b56 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4:40g2> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-sw:13-16> .
+
+_:b123
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:LinkGroup ;
+      rdf:rest () ;
+      owl:sameAs _:b123 .
+
+rdf:Seq
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdfs:Container , owl:Thing , rdfs:Resource , rdf:Seq ;
+      owl:equivalentClass rdf:Seq ;
+      owl:sameAs rdf:Seq .
+
+nml:labeltype
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      rdfs:range owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf nml:labeltype ;
+      owl:equivalentProperty
+              nml:labeltype ;
+      owl:sameAs nml:labeltype .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b42 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:8> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-1-eth0> .
+
+nml:LabelGroup
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      owl:equivalentClass nml:LabelGroup ;
+      owl:sameAs nml:LabelGroup .
+
+owl:Thing
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource ;
+      owl:equivalentClass owl:Thing , rdfs:Resource ;
+      owl:sameAs owl:Thing .
+
+owl:OntologyProperty
+      a       owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      rdfs:subClassOf rdf:Property , owl:Thing , owl:OntologyProperty , rdfs:Resource ;
+      owl:equivalentClass owl:OntologyProperty ;
+      owl:sameAs owl:OntologyProperty .
+
+nml:ListItem
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , nml:ListItem , rdfs:Resource ;
+      owl:equivalentClass nml:ListItem ;
+      owl:sameAs nml:ListItem .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , mrs:BlockStorageService , rdfs:Resource , _:b4 , nml:Service ;
+      mrs:disk_gb "110592"^^xsd:long ;
+      mrs:hasBenchmark <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:ioperf-service:bench1> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:storage-service:block-1> .
+
+owl:unionOf
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf owl:unionOf ;
+      owl:equivalentProperty
+              owl:unionOf ;
+      owl:sameAs owl:unionOf .
+
+nml:canProvidePort
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain nml:NetworkObject , _:b5 , owl:Thing , rdfs:Resource , _:b4 , nml:Service ;
+      rdfs:range owl:Thing , _:b3 , rdfs:Resource , _:b9 ;
+      rdfs:subPropertyOf nml:canProvidePort ;
+      owl:equivalentProperty
+              nml:canProvidePort ;
+      owl:sameAs nml:canProvidePort .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b103 ;
+      nml:isAlias <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:7> .
+
+rdf:subject
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain rdf:Statement , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf rdf:subject ;
+      owl:equivalentProperty
+              rdf:subject ;
+      owl:sameAs rdf:subject .
+
+xsd:gMonth
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf xsd:gMonth , owl:Thing , rdfs:Resource ;
+      owl:equivalentClass xsd:gMonth ;
+      owl:sameAs xsd:gMonth .
+
+owl:AnnotationProperty
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , owl:AnnotationProperty , rdfs:Resource ;
+      owl:equivalentClass owl:AnnotationProperty ;
+      owl:sameAs owl:AnnotationProperty .
+
+rdfs:range
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:domain rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:range owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subPropertyOf rdfs:range ;
+      owl:equivalentProperty
+              rdfs:range ;
+      owl:sameAs rdfs:range .
+
+owl:differentFrom
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty , owl:SymmetricProperty ;
+      rdfs:domain owl:Thing , rdfs:Resource ;
+      rdfs:range owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf owl:differentFrom ;
+      owl:equivalentProperty
+              owl:differentFrom ;
+      owl:sameAs owl:differentFrom .
+
+xsd:gYear
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:gYear ;
+      owl:equivalentClass xsd:gYear ;
+      owl:sameAs xsd:gYear .
+
+nml:alt
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:domain _:b5 , nml:Location , owl:Thing , rdfs:Resource , _:b4 ;
+      rdfs:range owl:Thing , xsd:float , rdfs:Resource ;
+      rdfs:subPropertyOf nml:alt ;
+      owl:equivalentProperty
+              nml:alt ;
+      owl:sameAs nml:alt .
+
+xsd:negativeInteger
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:negativeInteger ;
+      owl:equivalentClass xsd:negativeInteger ;
+      owl:sameAs xsd:negativeInteger .
+
+_:b104
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalPort ;
+      rdf:rest _:b136 ;
+      owl:sameAs _:b104 .
+
+xsd:dateTime
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:dateTime ;
+      owl:disjointWith xsd:duration , xsd:unsignedShort , xsd:float , xsd:byte , xsd:unsignedLong , xsd:unsignedByte , xsd:long , xsd:string , xsd:date , xsd:nonNegativeInteger , xsd:time , xsd:nonPositiveInteger , xsd:boolean , xsd:unsignedInt , xsd:int , xsd:decimal , xsd:short , xsd:integer ;
+      owl:equivalentClass xsd:dateTime ;
+      owl:sameAs xsd:dateTime .
+
+_:b134
+      a       owl:Thing , mrs:Address , rdfs:Resource ;
+      mrs:prefix "0.0.0.0/0"^^xsd:string ;
+      owl:sameAs _:b134 .
+
+xsd:duration
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf xsd:duration , owl:Thing , rdfs:Resource ;
+      owl:disjointWith xsd:unsignedShort , xsd:float , xsd:byte , xsd:unsignedLong , xsd:unsignedByte , xsd:long , xsd:string , xsd:date , xsd:nonNegativeInteger , xsd:time , xsd:nonPositiveInteger , xsd:boolean , xsd:unsignedInt , xsd:int , xsd:decimal , xsd:dateTime , xsd:short , xsd:integer ;
+      owl:equivalentClass xsd:duration ;
+      owl:sameAs xsd:duration .
+
+mrs:providesBenchmark
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:providesBenchmark ;
+      owl:equivalentProperty
+              mrs:providesBenchmark ;
+      owl:sameAs mrs:providesBenchmark .
+
+nml:isSerialCompoundLink
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain _:b50 , owl:Thing , rdfs:Resource , _:b54 ;
+      rdfs:range owl:Thing , nml:ListItem , rdfs:Resource ;
+      rdfs:subPropertyOf nml:isSerialCompoundLink ;
+      owl:equivalentProperty
+              nml:isSerialCompoundLink ;
+      owl:sameAs nml:isSerialCompoundLink .
+
+xsd:gDay
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , xsd:gDay , rdfs:Resource ;
+      owl:equivalentClass xsd:gDay ;
+      owl:sameAs xsd:gDay .
+
+mrs:Route
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , mrs:Route , rdfs:Resource ;
+      owl:equivalentClass mrs:Route ;
+      owl:sameAs mrs:Route .
+
+mrs:average_iops_4kb_read
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:average_iops_4kb_read ;
+      owl:equivalentProperty
+              mrs:average_iops_4kb_read ;
+      owl:sameAs mrs:average_iops_4kb_read .
+
+nml:parameter
+      a       rdf:Property , owl:Thing , owl:DatatypeProperty , rdfs:Resource ;
+      rdfs:range owl:Thing , rdfs:Resource , xsd:string ;
+      rdfs:subPropertyOf nml:parameter ;
+      owl:equivalentProperty
+              nml:parameter ;
+      owl:sameAs nml:parameter .
+
+owl:Class
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , owl:Class , rdfs:Class ;
+      owl:equivalentClass owl:Class , rdfs:Class ;
+      owl:sameAs owl:Class .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:routing-service>
+      a       _:b5 , nml:NetworkObject , owl:Thing , owl:NamedIndividual , rdfs:Resource , _:b4 , mrs:RoutingService , nml:Service ;
+      mrs:localAddress "206.196.178.66/27" ;
+      mrs:providesRoute <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:route-to-wan> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:routing-service> .
+
+<urn:ogf:network:dragon.maxgigapop.net:2013:topology>
+      a       nml:NetworkObject , _:b5 , owl:Thing , nml:Topology , owl:NamedIndividual , rdfs:Resource , _:b4 , nml:Group ;
+      nml:hasBidirectionalPort
+              <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-2> , <urn:ogf:network:dragon.maxgigapop.net:2013:mcln-vlsr:1-2-1> , <urn:ogf:network:dragon.maxgigapop.net:2013:clpk-vlsr:1-2-3> ;
+      nml:hasService <urn:ogf:network:dragon.maxgigapop.net:2013:switching-service:l2:1> ;
+      owl:sameAs <urn:ogf:network:dragon.maxgigapop.net:2013:topology> .
+
+mrs:maximum_iops_4kb_write
+      a       rdf:Property , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf mrs:maximum_iops_4kb_write ;
+      owl:equivalentProperty
+              mrs:maximum_iops_4kb_write ;
+      owl:sameAs mrs:maximum_iops_4kb_write .
+
+nml:hasLabelGroup
+      a       rdf:Property , owl:Thing , rdfs:Resource , owl:ObjectProperty ;
+      rdfs:domain owl:Thing , _:b2 , rdfs:Resource , _:b8 ;
+      rdfs:range nml:LabelGroup , owl:Thing , rdfs:Resource , _:b23 , _:b24 ;
+      rdfs:subPropertyOf nml:hasLabelGroup ;
+      owl:equivalentProperty
+              nml:hasLabelGroup ;
+      owl:sameAs nml:hasLabelGroup .
+
+mrs:IOPerformanceMeasurementService
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , mrs:IOPerformanceMeasurementService ;
+      owl:equivalentClass mrs:IOPerformanceMeasurementService ;
+      owl:sameAs mrs:IOPerformanceMeasurementService .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:route-to-wan>
+      a       owl:Thing , mrs:Route , rdfs:Resource ;
+      mrs:nextHop <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:5-6> ;
+      mrs:prefix "0.0.0.0/0" ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:route-to-wan> .
+
+_:b136
+      a       owl:Thing , rdf:List , rdfs:Resource ;
+      rdf:first nml:BidirectionalLink ;
+      rdf:rest () ;
+      owl:sameAs _:b136 .
+
+owl:imports
+      a       rdf:Property , owl:Thing , owl:OntologyProperty , rdfs:Resource ;
+      rdfs:domain owl:Ontology , owl:Thing , rdfs:Resource ;
+      rdfs:range owl:Ontology , owl:Thing , rdfs:Resource ;
+      rdfs:subPropertyOf owl:imports ;
+      owl:equivalentProperty
+              owl:imports ;
+      owl:sameAs owl:imports .
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9>
+      a       _:b1 , _:b2 , _:b3 , rdfs:Resource , _:b4 , nml:Group , nml:NetworkObject , _:b5 , _:b6 , owl:Thing , owl:NamedIndividual , _:b7 , nml:BidirectionalPort , _:b8 , _:b9 , _:b10 ;
+      nml:hasLabelGroup _:b119 ;
+      nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-ceph:osd-2-eth0> ;
+      owl:sameAs <urn:ogf:network:rains.maxgigapop.net:2013:clpk-6509:9> .
+
+xsd:boolean
+      a       owl:Thing , owl:Class , rdfs:Resource , rdfs:Class , rdfs:Datatype ;
+      rdfs:subClassOf owl:Thing , rdfs:Resource , xsd:boolean ;
+      owl:disjointWith xsd:duration , xsd:unsignedShort , xsd:float , xsd:byte , xsd:unsignedLong , xsd:unsignedByte , xsd:long , xsd:string , xsd:date , xsd:nonNegativeInteger , xsd:time , xsd:nonPositiveInteger , xsd:unsignedInt , xsd:int , xsd:decimal , xsd:dateTime , xsd:short , xsd:integer ;
+      owl:equivalentClass xsd:boolean ;
+      owl:sameAs xsd:boolean .

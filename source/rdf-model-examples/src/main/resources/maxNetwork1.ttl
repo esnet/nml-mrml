@@ -1,0 +1,224 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://schemas.ogf.org/nml/2013/03/base#> .
+@prefix nml:   <http://schemas.ogf.org/nml/2013/03/base#> .
+@prefix mrs:   <http://schemas.ogf.org/mrs/2013/12/topology#> .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching>
+        a                         owl:NamedIndividual , nml:SwitchingService ;
+        mrs:providesSubnet        <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching:svc-dcn-10014-vlan> ;
+        nml:encoding              <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+        nml:hasBidirectionalPort  <urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-1-2:link=*> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=MCLN:port=1-3-1:link=*> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=MAX:port=1-0-8:link=*> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-2-3:link=*> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=MAX:port=1-0-9:link=*> ;
+        nml:labelSwapping         "false" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching:svc-dcn-10014-vlan>
+        a                         mrs:SwitchingSubnet , owl:NamedIndividual ;
+        nml:encoding              <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+        nml:hasBidirectionalPort  <urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-1-2:link=*:vlan-3020> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-2-3:link=*:vlan-3020> ;
+        nml:labelSwapping         "false" .
+
+<urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-1-2:link=*:vlan-3020>
+        a              nml:BidirectionalPort , owl:NamedIndividual ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching:svc-dcn-10014-vlan> ;
+        nml:hasLabel   <urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-1-2:link=*:vlan-3020:label> .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:p2c:aid-1>
+        a          mrs:NetworkAddress , owl:NamedIndividual ;
+        mrs:type   "bgp-asn" ;
+        mrs:value  "65103" .
+
+<urn:ogf:network:domain=dragon.maxgigapop.net:node=MAX:port=1-0-9:link=*>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching> ;
+        nml:name       "interface3-2" .
+
+<urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-2-3:link=*:vlan-3020:label>
+        a              nml:Label , owl:NamedIndividual ;
+        nml:labeltype  <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+        nml:value      "any" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/3>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l2switching> ;
+        nml:name       "interface1-3" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN>
+        a                         owl:NamedIndividual , nml:Node ;
+        nml:belongsTo             <urn:ogf:network:sdn.maxgigapop.net:network> ;
+        nml:hasBidirectionalPort  <urn:ogf:network:domain=sdn.maxgigapop.net:node=DEV2:port=2> , <urn:ogf:network:domain=sdn.maxgigapop.net:node=MAX:port=3> , <urn:ogf:network:domain=sdn.maxgigapop.net:node=MAX:port=4> , <urn:ogf:network:domain=sdn.maxgigapop.net:node=DEV2:port=1> ;
+        nml:hasService            <urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN:l2switching> ;
+        nml:name                  "OpenFlow SDN by FloodLight Controller" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:c2p:aid-3>
+        a          mrs:NetworkAddress , owl:NamedIndividual ;
+        mrs:type   "bgp-asn" ;
+        mrs:value  "65101" .
+
+<urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-2-3:link=*:vlan-3020>
+        a              nml:BidirectionalPort , owl:NamedIndividual ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching:svc-dcn-10014-vlan> ;
+        nml:hasLabel   <urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-2-3:link=*:vlan-3020:label> .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON>
+        a                         nml:Node , owl:NamedIndividual ;
+        nml:belongsTo             <urn:ogf:network:sdn.maxgigapop.net:network> ;
+        nml:hasBidirectionalPort  <urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-2-3:link=*> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=MCLN:port=1-3-1:link=*> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-1-2:link=*> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-2-3:link=*:vlan-3020> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-1-2:link=*:vlan-3020> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=MAX:port=1-0-9:link=*> , <urn:ogf:network:domain=dragon.maxgigapop.net:node=MAX:port=1-0-8:link=*> ;
+        nml:hasService            <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching> ;
+        nml:name                  "DRAGON OSCARS DCN" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/2>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l2switching> ;
+        nml:name       "interface1-2" .
+
+<urn:ogf:network:sdn.maxgigapop.net:network>
+        a            owl:NamedIndividual , nml:Topology ;
+        nml:hasNode  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MCLN> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON> .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:p2c>
+        a              mrs:Route , owl:NamedIndividual ;
+        mrs:nextHop    <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:p2c:aid-2> ;
+        mrs:routeFrom  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:c2p:aid-6> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/1> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:c2p:aid-4> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:c2p:aid-3> ;
+        mrs:routeTo    <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:p2c:aid-1> .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:p2c:aid-5>
+        a          mrs:NetworkAddress , owl:NamedIndividual ;
+        mrs:type   "bgp-prefix-list" ;
+        mrs:value  "140.173.23.232/32" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/3:vlan-103>
+        a             nml:BidirectionalPort , owl:NamedIndividual ;
+        nml:hasLabel  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/3:vlan-103:label> .
+
+<urn:ogf:network:domain=sdn.maxgigapop.net:node=DEV2:port=2>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN:l2switching> ;
+        nml:name       "interface4-2" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/1:vlan-201>
+        a             nml:BidirectionalPort , owl:NamedIndividual ;
+        nml:hasLabel  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/1:vlan-201:label> .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/1>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l2switching> ;
+        nml:name       "interface1-1" .
+
+<urn:ogf:network:domain=dragon.maxgigapop.net:node=MCLN:port=1-3-1:link=*>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching> ;
+        nml:name       "interface3-4" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MCLN:l2switching>
+        a                         owl:NamedIndividual , nml:SwitchingService ;
+        nml:encoding              <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+        nml:hasBidirectionalPort  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=xe-2/1/1> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=xe-2/1/2> ;
+        nml:labelSwapping         "false" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l2switching>
+        a                         owl:NamedIndividual , nml:SwitchingService ;
+        nml:encoding              <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+        nml:hasBidirectionalPort  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/2> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/1> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/3> ;
+        nml:labelSwapping         "false" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:c2p>
+        a              mrs:Route , owl:NamedIndividual ;
+        mrs:nextHop    <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:c2p:aid-4> ;
+        mrs:routeFrom  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:p2c:aid-5> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/3> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:p2c:aid-2> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:p2c:aid-1> ;
+        mrs:routeTo    <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:c2p:aid-3> .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/1:vlan-201:label>
+        a              nml:Label , owl:NamedIndividual ;
+        nml:labeltype  <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+        nml:value      "201" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3routing>
+        a                  mrs:RoutingService , owl:NamedIndividual ;
+        mrs:providesRoute  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:c2p> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:p2c> .
+
+<urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-1-2:link=*:vlan-3020:label>
+        a              nml:Label , owl:NamedIndividual ;
+        nml:labeltype  <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+        nml:value      "any" .
+
+<urn:ogf:network:domain=sdn.maxgigapop.net:node=DEV2:port=1>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN:l2switching> ;
+        nml:name       "interface4-1" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MCLN>
+        a                         owl:NamedIndividual , nml:Node ;
+        nml:belongsTo             <urn:ogf:network:sdn.maxgigapop.net:network> ;
+        nml:hasBidirectionalPort  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=xe-2/1/1> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=xe-2/1/2> ;
+        nml:hasService            <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MCLN:l2switching> ;
+        nml:name                  "device2" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:c2p:aid-6>
+        a          mrs:NetworkAddress , owl:NamedIndividual ;
+        mrs:type   "bgp-prefix-list" ;
+        mrs:value  "140.173.21.128/26,140.173.21.232/32" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=xe-2/1/2>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MCLN> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MCLN:l2switching> ;
+        nml:name       "interface2-2" .
+
+<urn:ogf:network:domain=sdn.maxgigapop.net:node=MAX:port=4>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN:l2switching> ;
+        nml:name       "interface4-4" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/3:vlan-103:label>
+        a              nml:Label , owl:NamedIndividual ;
+        nml:labeltype  <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+        nml:value      "103" .
+
+<urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-2-3:link=*>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching> ;
+        nml:name       "interface3-4" .
+
+<urn:ogf:network:domain=dragon.maxgigapop.net:node=CLPK:port=1-1-2:link=*>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching> ;
+        nml:name       "interface3-4" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=xe-2/1/1>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MCLN> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MCLN:l2switching> ;
+        nml:name       "interface2-1" .
+
+<urn:ogf:network:domain=sdn.maxgigapop.net:node=MAX:port=3>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN:l2switching> ;
+        nml:name       "interface4-3" .
+
+<urn:ogf:network:domain=dragon.maxgigapop.net:node=MAX:port=1-0-8:link=*>
+        a              owl:NamedIndividual , nml:BidirectionalPort ;
+        nml:belongsTo  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=DRAGON:l2switching> ;
+        nml:name       "interface3-1" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:p2c:aid-2>
+        a          mrs:NetworkAddress , owl:NamedIndividual ;
+        mrs:type   "bgp-remote-ip" ;
+        mrs:value  "140.173.23.2/30" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=SDN:l2switching>
+        a                         owl:NamedIndividual , nml:SwitchingService ;
+        nml:encoding              <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> ;
+        nml:hasBidirectionalPort  <urn:ogf:network:domain=sdn.maxgigapop.net:node=DEV2:port=2> , <urn:ogf:network:domain=sdn.maxgigapop.net:node=MAX:port=3> , <urn:ogf:network:domain=sdn.maxgigapop.net:node=MAX:port=4> , <urn:ogf:network:domain=sdn.maxgigapop.net:node=DEV2:port=1> ;
+        nml:labelSwapping         "false" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX>
+        a                         nml:Node , owl:NamedIndividual ;
+        nml:belongsTo             <urn:ogf:network:sdn.maxgigapop.net:network> ;
+        nml:hasBidirectionalPort  <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/1> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/2> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/3:vlan-103> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/1:vlan-201> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:port=fe-0/2/3> ;
+        nml:hasService            <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l2switching> , <urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3routing> ;
+        nml:name                  "device1" .
+
+<urn:ogf:network:domain=sdnx.maxgigapop.net:node=MAX:l3route:svc-aws-11004:c2p:aid-4>
+        a          mrs:NetworkAddress , owl:NamedIndividual ;
+        mrs:type   "bgp-remote-ip" ;
+        mrs:value  "140.173.21.6/30" .
+

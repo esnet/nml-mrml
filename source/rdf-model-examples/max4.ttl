@@ -1,0 +1,49 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix nml: <http://schemas.ogf.org/nml/2013/03/base#>.
+@prefix mrs: <http://schemas.ogf.org/mrs/2013/12/topology#>.
+
+<http://www.maxgigapop.net/mrs/2013/topology#> a owl:Ontology;
+    rdfs:label 'NML-MRS Description of the MAX Research Infrastructure'.
+
+# 1. UCS based Multi-Service Exchange (MSX) platform
+# 1.1. UCS Blades 1 & 4
+# Modeling:  Each blade is a Node with 2x40G Port.
+# Services:  HypervisorService, VirtualSwitchService, HypervisorBypassInterfaceService, SwitchingService
+
+<urn:ogf:network:rains.maxgigapop.net:2013:topology>
+    a   nml:Topology,
+        owl:NamedIndividual;
+    nml:hasLabelGroup
+        <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1>.
+
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1>
+    a   nml:Node,
+        owl:NamedIndividual;
+    nml:hasBidirectionalPort
+        <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1>.
+                            
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-4>
+    a   nml:Node,
+        owl:NamedIndividual.
+
+
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:40g1>
+    a   nml:BidirectionalPort,
+        owl:NamedIndividual;
+    nml:hasBidirectionalPort
+        <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0>.
+            
+<urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:eth0>
+    a   nml:BidirectionalPort,
+    owl:NamedIndividual;
+    nml:hasLabelGroup [
+            a   nml:LabelGroup;
+            nml:labeltype <http://schemas.ogf.org/nml/2012/10/ethernet#vlan>];
+            #nml:values "2000-2099"^^xsd:string];
+    nml:isAlias <urn:ogf:network:rains.maxgigapop.net:2013:clpk-msx-1:openstack-neutron:public>.
+
+

@@ -1,0 +1,35 @@
+[rule1:  (?a http://schemas.ogf.org/nml/2013/03/base#hasService ?b) 
+         (?b http://schemas.ogf.org/nml/2013/03/base#hasBidirectionalPort ?c)
+      -> (?a http://schemas.ogf.org/nml/2013/03/base#hasBidirectionalPort ?c)
+]
+[rule2:  (?a http://schemas.ogf.org/nml/2013/03/base#hasService ?b) 
+	 (?b http://schemas.ogf.org/mrs/2013/12/topology#providesVNic ?c) 
+      -> (?a http://schemas.ogf.org/nml/2013/03/base#hasBidirectionalPort ?c)
+]
+[rule3:  (?a http://schemas.ogf.org/nml/2013/03/base#hasService ?b) 
+	 (?b http://schemas.ogf.org/mrs/2013/12/topology#providesVM ?c) 
+      -> (?a http://schemas.ogf.org/nml/2013/03/base#hasNode ?c)
+]
+[rule4:  (?a http://schemas.ogf.org/nml/2013/03/base#hasTopology ?b)
+      -> (?a http://schemas.ogf.org/nml/2013/03/base#connectsTo ?b)
+         (?b http://schemas.ogf.org/nml/2013/03/base#connectsTo ?a)
+]
+[rule5:  (?a http://schemas.ogf.org/nml/2013/03/base#hasNode ?b)
+      -> (?a http://schemas.ogf.org/nml/2013/03/base#connectsTo ?b)
+         (?b http://schemas.ogf.org/nml/2013/03/base#connectsTo ?a)
+]
+[rule6:  (?a http://schemas.ogf.org/nml/2013/03/base#hasBidirectionalPort ?b)
+      -> (?a http://schemas.ogf.org/nml/2013/03/base#connectsTo ?b)
+         (?b http://schemas.ogf.org/nml/2013/03/base#connectsTo ?a)
+]
+[rule7:  (?a http://schemas.ogf.org/nml/2013/03/base#isAlias ?b) 
+      -> (?b http://schemas.ogf.org/nml/2013/03/base#isAlias ?a)
+         (?a http://schemas.ogf.org/nml/2013/03/base#connectsTo ?b)
+         (?b http://schemas.ogf.org/nml/2013/03/base#connectsTo ?a)
+]
+[rule8:  (?a http://schemas.ogf.org/nml/2013/03/base#hasService ?b) 
+	 (?b http://schemas.ogf.org/mrs/2013/12/topology#providesSubnet ?c) 
+         (?c http://schemas.ogf.org/nml/2013/03/base#hasBidirectionalPort ?d)
+      -> (?a http://schemas.ogf.org/nml/2013/03/base#connectsTo ?d)
+         (?d http://schemas.ogf.org/nml/2013/03/base#connectsTo ?a)
+]

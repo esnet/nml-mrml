@@ -1,0 +1,31 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX nml: <http://schemas.ogf.org/nml/2013/03/base#>
+PREFIX mrs: <http://schemas.ogf.org/mrs/2013/12/topology#>
+    
+CONSTRUCT {
+  ?s nml:hasService ?swsvc. 
+  ?s nml:hasBidirectionalPort ?biport. 
+  ?swsvc nml:hasBidirectionalPort ?biport. 
+  ?biport1 nml:hasBidirectionalPort ?biport2. 
+  ?biport3 nml:isAlias ?biport4. 
+  ?biport3 ?x ?y. 
+} WHERE {
+  { ?s a  ?stype.
+    ?s nml:hasService ?swsvc . 
+    ?swsvc a nml:SwitchingService . 
+    ?swsvc nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> . 
+    ?biport a nml:BidirectionalPort . 
+    FILTER ((?stype in (nml:Topology, nml:Node)))
+  } UNION {
+    ?biport1 a nml:BidirectionalPort . 
+    ?biport2 a nml:BidirectionalPort . 
+    ?biport1 nml:hasBidirectionalPort ?biport2 . 
+    ?biport3 a nml:BidirectionalPort . 
+    ?biport4 a nml:BidirectionalPort . 
+    ?biport3 nml:isAlias ?biport4 . 
+    ?biport3 ?x ?y . 
+    FILTER (REGEX(STR(?x), '^http://schemas.ogf.org/nml/2013/03/base#'))
+  }
+}

@@ -29,12 +29,16 @@ import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.query.ResultSetFormatter;
+import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.rdf.model.StmtIterator;
+import com.hp.hpl.jena.reasoner.Reasoner;
+import com.hp.hpl.jena.reasoner.rulesys.GenericRuleReasoner;
+import com.hp.hpl.jena.reasoner.rulesys.Rule;
 import com.hp.hpl.jena.util.FileManager;
 
 /**
@@ -101,8 +105,8 @@ public final class sparqlTransformTest1 {
         ResultSetFormatter.out(System.out, results, query) ;
         */
         Model modelConstructed = qexec.execConstruct();
-        modelConstructed.setNsPrefix("nml", "http://schemas.ogf.org/nml/2013/03/base#");
-        modelConstructed.setNsPrefix("mrs", "http://schemas.ogf.org/mrs/2013/12/topology#");
+        //modelConstructed.setNsPrefix("nml", "http://schemas.ogf.org/nml/2013/03/base#");
+        //modelConstructed.setNsPrefix("mrs", "http://schemas.ogf.org/mrs/2013/12/topology#");       
         modelConstructed.write(System.out, "RDF/XML-ABBREV");
     }
 }
