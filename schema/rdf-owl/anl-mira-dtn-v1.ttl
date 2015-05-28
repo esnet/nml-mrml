@@ -51,8 +51,8 @@
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:mira-xeth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:mira-eth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:mira-ib0>;
-  nml:hasNode
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:compute_node>;
+  :num_cores "16"^^xsd:int;
+  :memory_gb "16"^^xsd:long;
   nml:hasService 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:gridftp-service>.
 
@@ -72,13 +72,7 @@
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "32"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e8/1>.  
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:compute_node>
-  a   nml:Node ,
-      owl:NamedIndividual;
-  :num_cores "16"^^xsd:int;
-  :memory_gb "16"^^xsd:long.
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e1/1>.  
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:gridftp-service>
   a   owl:NamedIndividual ,
@@ -103,14 +97,20 @@
   :link_type "infiniband"^^xsd:string;
   :capacity_Gbps "32"^^xsd:long;
   nml:hasBidirectionalPort 
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:mira-ib0>,
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:san-ib0>.
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:san:mira-ib0>,
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:san:san-ib0>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:san-ib0>
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:san:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
-  :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e10/1>.
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e1/1>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:san:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e2/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:storage_node>
   a   nml:Node ,
@@ -120,6 +120,12 @@
   nml:hasService
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:ioperf-service>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:storage-service>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e2/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn01:storage-service> 
   a   mrs:StorageService,
@@ -164,8 +170,6 @@
 
 
 
-
-
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02> 
   a   nml:Node ,
       owl:NamedIndividual;
@@ -173,8 +177,8 @@
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:mira-xeth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:mira-eth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:mira-ib0>;
-  nml:hasNode
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:compute_node>;
+  :num_cores "16"^^xsd:int;
+  :memory_gb "16"^^xsd:long;
   nml:hasService 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:gridftp-service>.
 
@@ -194,13 +198,7 @@
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "32"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e9/1>.  
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:compute_node>
-  a   nml:Node ,
-      owl:NamedIndividual;
-  :num_cores "16"^^xsd:int;
-  :memory_gb "16"^^xsd:long.
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e3/1>.  
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:gridftp-service>
   a   owl:NamedIndividual ,
@@ -225,14 +223,20 @@
   :link_type "infiniband"^^xsd:string;
   :capacity_Gbps "32"^^xsd:long;
   nml:hasBidirectionalPort 
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:mira-ib0>,
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:san-ib0>.
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:san:mira-ib0>,
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:san:san-ib0>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:san-ib0>
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:san:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
-  :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e11/1>.
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e3/1>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:san:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e4/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:storage_node>
   a   nml:Node ,
@@ -242,6 +246,12 @@
   nml:hasService
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:ioperf-service>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:storage-service>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e4/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:storage-service> 
   a   mrs:StorageService,
@@ -269,14 +279,14 @@
   :seek_time "TBF";
   :spin_speed_rpm "7200"^^xsd:int;
   :raid_type "6"^^xsd:int;
-  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:ioperf-service:bench2>.
+  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:ioperf-service:bench1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:ioperf-service>
   a   mrs:IOPerformanceMeasurementService,
       owl:NamedIndividual;
-  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:ioperf-service:bench2>.
+  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:ioperf-service:bench1>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:ioperf-service:bench2> 
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn02:ioperf-service:bench1> 
   a   mrs:POSIX_IOBenchmark,
       owl:NamedIndividual;
   mrs:average_iops_4kb_write "236000"^^xsd:long ;
@@ -285,17 +295,15 @@
   mrs:maximum_iops_4kb_write "265000"^^xsd:long .
 
 
-
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn03> 
+  <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03> 
   a   nml:Node ,
       owl:NamedIndividual;
   nml:hasBidirectionalPort 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:mira-xeth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:mira-eth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:mira-ib0>;
-  nml:hasNode
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:compute_node>;
+  :num_cores "16"^^xsd:int;
+  :memory_gb "16"^^xsd:long;
   nml:hasService 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:gridftp-service>.
 
@@ -315,13 +323,7 @@
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "32"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e10/1>.  
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:compute_node>
-  a   nml:Node ,
-      owl:NamedIndividual;
-  :num_cores "16"^^xsd:int;
-  :memory_gb "16"^^xsd:long.
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e5/1>.  
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:gridftp-service>
   a   owl:NamedIndividual ,
@@ -346,14 +348,20 @@
   :link_type "infiniband"^^xsd:string;
   :capacity_Gbps "32"^^xsd:long;
   nml:hasBidirectionalPort 
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:mira-ib0>,
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:san-ib0>.
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:san:mira-ib0>,
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:san:san-ib0>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:san-ib0>
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:san:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
-  :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e12/1>.
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e5/1>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:san:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e6/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:storage_node>
   a   nml:Node ,
@@ -363,6 +371,12 @@
   nml:hasService
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:ioperf-service>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:storage-service>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e6/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:storage-service> 
   a   mrs:StorageService,
@@ -390,14 +404,14 @@
   :seek_time "TBF";
   :spin_speed_rpm "7200"^^xsd:int;
   :raid_type "6"^^xsd:int;
-  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:ioperf-service:bench3>.
+  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:ioperf-service:bench1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:ioperf-service>
   a   mrs:IOPerformanceMeasurementService,
       owl:NamedIndividual;
-  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:ioperf-service:bench3>.
+  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:ioperf-service:bench1>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:ioperf-service:bench3> 
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn03:ioperf-service:bench1> 
   a   mrs:POSIX_IOBenchmark,
       owl:NamedIndividual;
   mrs:average_iops_4kb_write "236000"^^xsd:long ;
@@ -406,17 +420,15 @@
   mrs:maximum_iops_4kb_write "265000"^^xsd:long .
 
 
-
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn04> 
+  <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04> 
   a   nml:Node ,
       owl:NamedIndividual;
   nml:hasBidirectionalPort 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:mira-xeth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:mira-eth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:mira-ib0>;
-  nml:hasNode
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:compute_node>;
+  :num_cores "16"^^xsd:int;
+  :memory_gb "16"^^xsd:long;
   nml:hasService 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:gridftp-service>.
 
@@ -436,13 +448,7 @@
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "32"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e11/1>.  
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:compute_node>
-  a   nml:Node ,
-      owl:NamedIndividual;
-  :num_cores "16"^^xsd:int;
-  :memory_gb "16"^^xsd:long.
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e7/1>.  
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:gridftp-service>
   a   owl:NamedIndividual ,
@@ -467,14 +473,20 @@
   :link_type "infiniband"^^xsd:string;
   :capacity_Gbps "32"^^xsd:long;
   nml:hasBidirectionalPort 
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:mira-ib0>,
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:san-ib0>.
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:san:mira-ib0>,
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:san:san-ib0>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:san-ib0>
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:san:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
-  :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e13/1>.
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e7/1>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:san:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e8/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:storage_node>
   a   nml:Node ,
@@ -484,6 +496,12 @@
   nml:hasService
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:ioperf-service>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:storage-service>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e8/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:storage-service> 
   a   mrs:StorageService,
@@ -511,14 +529,14 @@
   :seek_time "TBF";
   :spin_speed_rpm "7200"^^xsd:int;
   :raid_type "6"^^xsd:int;
-  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:ioperf-service:bench4>.
+  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:ioperf-service:bench1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:ioperf-service>
   a   mrs:IOPerformanceMeasurementService,
       owl:NamedIndividual;
-  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:ioperf-service:bench4>.
+  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:ioperf-service:bench1>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:ioperf-service:bench4> 
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn04:ioperf-service:bench1> 
   a   mrs:POSIX_IOBenchmark,
       owl:NamedIndividual;
   mrs:average_iops_4kb_write "236000"^^xsd:long ;
@@ -528,15 +546,15 @@
 
 
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn05> 
+  <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05> 
   a   nml:Node ,
       owl:NamedIndividual;
   nml:hasBidirectionalPort 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:mira-xeth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:mira-eth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:mira-ib0>;
-  nml:hasNode
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:compute_node>;
+  :num_cores "16"^^xsd:int;
+  :memory_gb "16"^^xsd:long;
   nml:hasService 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:gridftp-service>.
 
@@ -556,13 +574,7 @@
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "32"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e12/1>.  
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:compute_node>
-  a   nml:Node ,
-      owl:NamedIndividual;
-  :num_cores "16"^^xsd:int;
-  :memory_gb "16"^^xsd:long.
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e9/1>.  
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:gridftp-service>
   a   owl:NamedIndividual ,
@@ -587,14 +599,20 @@
   :link_type "infiniband"^^xsd:string;
   :capacity_Gbps "32"^^xsd:long;
   nml:hasBidirectionalPort 
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:mira-ib0>,
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:san-ib0>.
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:san:mira-ib0>,
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:san:san-ib0>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:san-ib0>
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:san:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
-  :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e14/1>.
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e9/1>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:san:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e10/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:storage_node>
   a   nml:Node ,
@@ -604,6 +622,12 @@
   nml:hasService
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:ioperf-service>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:storage-service>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e10/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:storage-service> 
   a   mrs:StorageService,
@@ -631,14 +655,14 @@
   :seek_time "TBF";
   :spin_speed_rpm "7200"^^xsd:int;
   :raid_type "6"^^xsd:int;
-  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:ioperf-service:bench5>.
+  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:ioperf-service:bench1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:ioperf-service>
   a   mrs:IOPerformanceMeasurementService,
       owl:NamedIndividual;
-  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:ioperf-service:bench5>.
+  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:ioperf-service:bench1>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:ioperf-service:bench5> 
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn05:ioperf-service:bench1> 
   a   mrs:POSIX_IOBenchmark,
       owl:NamedIndividual;
   mrs:average_iops_4kb_write "236000"^^xsd:long ;
@@ -648,16 +672,15 @@
 
 
 
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn06> 
+  <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06> 
   a   nml:Node ,
       owl:NamedIndividual;
   nml:hasBidirectionalPort 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:mira-xeth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:mira-eth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:mira-ib0>;
-  nml:hasNode
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:compute_node>;
+  :num_cores "16"^^xsd:int;
+  :memory_gb "16"^^xsd:long;
   nml:hasService 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:gridftp-service>.
 
@@ -671,19 +694,13 @@
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:eth-sw:e19/1>.  
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:eth-sw:e12/1>.  
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "32"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e13/1>.  
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:compute_node>
-  a   nml:Node ,
-      owl:NamedIndividual;
-  :num_cores "16"^^xsd:int;
-  :memory_gb "16"^^xsd:long.
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e11/1>.  
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:gridftp-service>
   a   owl:NamedIndividual ,
@@ -708,14 +725,20 @@
   :link_type "infiniband"^^xsd:string;
   :capacity_Gbps "32"^^xsd:long;
   nml:hasBidirectionalPort 
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:mira-ib0>,
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:san-ib0>.
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:san:mira-ib0>,
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:san:san-ib0>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:san-ib0>
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:san:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
-  :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e15/1>.
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e11/1>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:san:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e12/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:storage_node>
   a   nml:Node ,
@@ -725,6 +748,12 @@
   nml:hasService
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:ioperf-service>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:storage-service>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e12/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:storage-service> 
   a   mrs:StorageService,
@@ -752,14 +781,14 @@
   :seek_time "TBF";
   :spin_speed_rpm "7200"^^xsd:int;
   :raid_type "6"^^xsd:int;
-  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:ioperf-service:bench6>.
+  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:ioperf-service:bench1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:ioperf-service>
   a   mrs:IOPerformanceMeasurementService,
       owl:NamedIndividual;
-  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:ioperf-service:bench6>.
+  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:ioperf-service:bench1>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:ioperf-service:bench6> 
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn06:ioperf-service:bench1> 
   a   mrs:POSIX_IOBenchmark,
       owl:NamedIndividual;
   mrs:average_iops_4kb_write "236000"^^xsd:long ;
@@ -768,17 +797,15 @@
   mrs:maximum_iops_4kb_write "265000"^^xsd:long .
 
 
-
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn07> 
+  <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07> 
   a   nml:Node ,
       owl:NamedIndividual;
   nml:hasBidirectionalPort 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:mira-xeth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:mira-eth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:mira-ib0>;
-  nml:hasNode
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:compute_node>;
+  :num_cores "16"^^xsd:int;
+  :memory_gb "16"^^xsd:long;
   nml:hasService 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:gridftp-service>.
 
@@ -792,19 +819,13 @@
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:eth-sw:e20/1>.  
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:eth-sw:e15/1>.  
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "32"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e14/1>.  
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:compute_node>
-  a   nml:Node ,
-      owl:NamedIndividual;
-  :num_cores "16"^^xsd:int;
-  :memory_gb "16"^^xsd:long.
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e13/1>.  
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:gridftp-service>
   a   owl:NamedIndividual ,
@@ -829,14 +850,20 @@
   :link_type "infiniband"^^xsd:string;
   :capacity_Gbps "32"^^xsd:long;
   nml:hasBidirectionalPort 
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:mira-ib0>,
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:san-ib0>.
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:san:mira-ib0>,
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:san:san-ib0>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:san-ib0>
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:san:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
-  :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e16/1>.
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e13/1>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:san:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e14/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:storage_node>
   a   nml:Node ,
@@ -846,6 +873,12 @@
   nml:hasService
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:ioperf-service>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:storage-service>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e14/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:storage-service> 
   a   mrs:StorageService,
@@ -873,14 +906,14 @@
   :seek_time "TBF";
   :spin_speed_rpm "7200"^^xsd:int;
   :raid_type "6"^^xsd:int;
-  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:ioperf-service:bench7>.
+  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:ioperf-service:bench1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:ioperf-service>
   a   mrs:IOPerformanceMeasurementService,
       owl:NamedIndividual;
-  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:ioperf-service:bench7>.
+  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:ioperf-service:bench1>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:ioperf-service:bench7> 
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn07:ioperf-service:bench1> 
   a   mrs:POSIX_IOBenchmark,
       owl:NamedIndividual;
   mrs:average_iops_4kb_write "236000"^^xsd:long ;
@@ -890,15 +923,15 @@
 
 
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn08> 
+  <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08> 
   a   nml:Node ,
       owl:NamedIndividual;
   nml:hasBidirectionalPort 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:mira-xeth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:mira-eth0>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:mira-ib0>;
-  nml:hasNode
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:compute_node>;
+  :num_cores "16"^^xsd:int;
+  :memory_gb "16"^^xsd:long;
   nml:hasService 
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:gridftp-service>.
 
@@ -912,19 +945,13 @@
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:eth-sw:e21/1>.  
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:eth-sw:e16/1>.  
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
   :capacity_Gbps "32"^^xsd:long;
   nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e15/1>.  
-
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:compute_node>
-  a   nml:Node ,
-      owl:NamedIndividual;
-  :num_cores "16"^^xsd:int;
-  :memory_gb "16"^^xsd:long.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:gridftp-service>
   a   owl:NamedIndividual ,
@@ -949,14 +976,20 @@
   :link_type "infiniband"^^xsd:string;
   :capacity_Gbps "32"^^xsd:long;
   nml:hasBidirectionalPort 
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:mira-ib0>,
-      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:san-ib0>.
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:san:mira-ib0>,
+      <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:san:san-ib0>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:san-ib0>
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:san:mira-ib0>
   a   nml:BidirectionalPort,
       owl:NamedIndividual;
-  :capacity_Gbps "10"^^xsd:long;
-  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e17/1>.
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e15/1>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:san:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e16/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:storage_node>
   a   nml:Node ,
@@ -966,6 +999,12 @@
   nml:hasService
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:ioperf-service>,
       <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:storage-service>.
+
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:san-ib0>
+  a   nml:BidirectionalPort,
+      owl:NamedIndividual;
+  :capacity_Gbps "32"^^xsd:long;
+  nml:isAlias <urn:ogf:network:rains.anl.gov:2013:san-sw:e16/1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:storage-service> 
   a   mrs:StorageService,
@@ -993,17 +1032,18 @@
   :seek_time "TBF";
   :spin_speed_rpm "7200"^^xsd:int;
   :raid_type "6"^^xsd:int;
-  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:ioperf-service:bench8>.
+  mrs:hasBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:ioperf-service:bench1>.
 
 <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:ioperf-service>
   a   mrs:IOPerformanceMeasurementService,
       owl:NamedIndividual;
-  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:ioperf-service:bench8>.
+  mrs:providesBenchmark <urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:ioperf-service:bench1>.
 
-<urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:ioperf-service:bench8> 
+<urn:ogf:storage:rains.anl.gov:2013:mira-dtn08:ioperf-service:bench1> 
   a   mrs:POSIX_IOBenchmark,
       owl:NamedIndividual;
   mrs:average_iops_4kb_write "236000"^^xsd:long ;
   mrs:average_iops_4kb_read "236000"^^xsd:long ;
   mrs:maximum_iops_4kb_read "265000"^^xsd:long ;
   mrs:maximum_iops_4kb_write "265000"^^xsd:long .
+  
