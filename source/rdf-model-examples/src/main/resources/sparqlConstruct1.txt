@@ -8,6 +8,7 @@ PREFIX mrs: <http://schemas.ogf.org/mrs/2013/12/topology#>
 
 CONSTRUCT {
 # get Topology/Node -> (SwService -> *) / (BidirectionalPort -> *)
+  ?topo ?has_node_or_topology ?node. 
   ?node nml:hasService ?swsvc. 
   ?node nml:hasBidirectionalPort ?biport . 
   ?swsvc a nml:SwitchingService . 
@@ -49,6 +50,21 @@ CONSTRUCT {
     FILTER ((?label_or_labelgroup in (nml:Label, nml:LabelGroup)) &&
     	(?haslabel_or_labelgroup in (nml:hasLabel, nml:hasLabelGroup)) &&
     	(REGEX(STR(?nml_p3), '^http://schemas.ogf.org/nml/2013/03/base#'))
+    )
+  } UNION {
+    ?topo a  nml:Topology.
+    ?topo ?has_node_or_topology ?node .
+    ?node nml:hasService ?swsvc.
+    ?swsvc a nml:SwitchingService .
+    ?swsvc ?nml_p1 ?nml_o1 .
+    ?swsvc nml:encoding <http://schemas.ogf.org/nml/2012/10/ethernet#vlan> .
+    OPTIONAL {
+      ?swsvc mrs:providesSubnet ?subnet .
+      ?subnet a mrs:SwitchingSubnet .
+      ?subnet ?nml_p2_1 ?nml_o2_1 .
+      FILTER ((REGEX(STR(?nml_p2_1), '^http://schemas.ogf.org/nml/2013/03/base#')))
+    }
+    FILTER ( (?has_node_or_topology in (nml:hasTopology, nml:hasNode)) 
     )
   }
 }

@@ -65,7 +65,7 @@ import java.util.logging.Logger;
 public final class mceTransformTest1 {
     public static final String nmlSchemaFileName = "src/main/resources/nml-base-ext.owl";
     public static final String mrsSchemaFileName = "src/main/resources/nml-mrs-ext.owl";
-    public static final String instanceFileName = "src/main/resources/maxNetwork1.ttl";
+    public static final String instanceFileName = "src/main/resources/testNetwork1.ttl";
     public static final String sparsqlQueryFile = "src/main/resources/sparqlConstruct1.txt";
     public static final String reasonerRulesFile = "src/main/resources/reasonerRules1.txt";
     public static String sparqlString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
@@ -109,7 +109,7 @@ public final class mceTransformTest1 {
         Query query = QueryFactory.create(sparqlString);
         QueryExecution qexec = QueryExecutionFactory.create(query, model);
         Model modelConstructed = qexec.execConstruct();
-        //modelConstructed.write(System.out, "TURTLE");
+        modelConstructed.write(System.out, "TURTLE");
 
         Reasoner reasoner = new GenericRuleReasoner(Rule.parseRules(rulesString));
         reasoner.setDerivationLogging(true);

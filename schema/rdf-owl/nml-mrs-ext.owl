@@ -166,9 +166,9 @@
     </owl:Class>
 
 
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#TagGroup -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#Tag -->
 
-    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#TagGroup">
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Tag">
         <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
     </owl:Class>
 
@@ -381,11 +381,11 @@
     </owl:ObjectProperty>
 
 
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasTagGroup -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasTag -->
 
-    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasTagGroup">
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasTag">
         <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
-        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#TagGroup"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Tag"/>
     </owl:ObjectProperty>
     
     
@@ -661,13 +661,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     </owl:DatatypeProperty>
 
-
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#tag -->
-
-    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#tag">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#TagGroup"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
 </rdf:RDF>
 
 
