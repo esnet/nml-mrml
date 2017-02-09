@@ -236,6 +236,13 @@
         <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
     </owl:Class>
 
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#EndPoint -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#EndPoint">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
