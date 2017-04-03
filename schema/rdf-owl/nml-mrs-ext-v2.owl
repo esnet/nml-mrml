@@ -265,7 +265,20 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
 
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#tag -->
 
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#tag">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#order -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#order">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:ObjectProperty>
+    
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAddress -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAddress">
@@ -470,16 +483,8 @@
             </owl:Class>
         </rdfs:range>
     </owl:ObjectProperty>
-
-
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasTag -->
-
-    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasTag">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
-        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Tag"/>
-    </owl:ObjectProperty>
     
-
+    
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesService -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesService">
