@@ -183,13 +183,6 @@
     </owl:Class>
 
 
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#Tag -->
-
-    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Tag">
-        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
-    </owl:Class>
-
-
     <!-- 
         classes for describing Data Transfer Node and Storage system
     -->
