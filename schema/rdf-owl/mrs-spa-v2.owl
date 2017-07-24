@@ -190,7 +190,7 @@
     <!-- http://schemas.ogf.org/mrs/2015/02/spa#format -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2015/02/spa#format">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2015/02/spa#PolicyData/>
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2015/02/spa#PolicyData"/>
     </owl:ObjectProperty>
 
 
