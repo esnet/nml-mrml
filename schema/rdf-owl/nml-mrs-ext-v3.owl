@@ -17,7 +17,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
-    //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
@@ -863,28 +862,40 @@
         DatatypeProperty added as part of SENSE features.
     -->
 
+capacity - The total capacity of the port in bps;
+
+    <!-- reservableCapacity - The maximum reservable bandwidth on a port for a single service. -->
+    
     <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#reservableCapacity">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwithService"/>
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     </owl:DatatypeProperty>
+    
+    <!-- granularity - The granularity of bandwidth increments for a requested service. -->
     
     <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#granularity">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwithService"/>
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     </owl:DatatypeProperty>
+    
+    <!-- availableCapacity - The total remaining capacity on the port. -->
     
     <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#availableCapacity">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwithService"/>
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     </owl:DatatypeProperty>
     
-    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#capacity">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwithService"/>
+    <!-- maximumCapacity - The total capacity of the port. -->
+    
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#maximumCapacity">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     </owl:DatatypeProperty>
+    
+    <!-- unit - The unit of measure providing context to the bandwidth related attributes. -->
     
     <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#unit">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwithService"/>
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
