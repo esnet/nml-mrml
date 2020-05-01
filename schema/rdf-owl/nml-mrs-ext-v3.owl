@@ -430,7 +430,7 @@
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesSubnet -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesSubnet">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#SwitchingService"/>
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#SwitchingService"/>
         <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#SwitchingSubnet"/>
     </owl:ObjectProperty>
     
