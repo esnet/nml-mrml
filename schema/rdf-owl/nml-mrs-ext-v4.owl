@@ -1,0 +1,955 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://schemas.ogf.org/mrs/2013/12/topology#"
+     xml:base="http://schemas.ogf.org/mrs/2013/12/topology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:nml="http://schemas.ogf.org/nml/2013/03/base#"
+     xmlns:mrs="http://schemas.ogf.org/mrs/2013/12/topology#">
+
+    <owl:Ontology rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#">
+        <rdfs:label>The Multi-Resource Service (MRS) extension of NML Schema</rdfs:label>
+    </owl:Ontology>
+    
+    
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#NetworkAttribute -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAttribute">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAttribute"/>
+    </owl:Class>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#SwitchingSubnet -->
+    <!--
+        SwitchingService describe switching capability attributes for entire scope.
+        SwitchingSubnet models sub-level switching services, l2 cross-connects etc.
+    -->
+    
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#SwitchingSubnet">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#SwitchingService"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#RoutingService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#RoutingService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#RoutingTable -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#RoutingTable">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#OpenflowService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#OpenflowService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#FlowTable -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#FlowTable">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#VirtualCloudService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualCloudService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#HypervisorService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#StorageService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#StorageService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#BlockStorageService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#BlockStorageService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#ObjectStorageService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ObjectStorageService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#IOPerformanceMeasurementService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#IOPerformanceMeasurementService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#Route -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Route">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#Flow -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Flow">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#FlowRule -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#FlowRule">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#Volume -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Volume">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#Bucket -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Bucket">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#POSIX_IOBenchmark -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#POSIX_IOBenchmark">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#S3_IOBenchmark -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#S3_IOBenchmark">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+
+
+    <!-- 
+        classes for describing Data Transfer Node and Storage system
+    -->
+
+
+    <!--  http://schemas.ogf.org/mrs/2013/12/topology#FileSystem -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#FileSystem">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#DataTransferService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#DataTransferService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#DataTransferClusterService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#DataTransferClusterService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#DataTransfer -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#DataTransfer">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#IOPerformanceMeasurementService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#IOPerformanceMeasurementService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#Batch -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Batch">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+
+    <!-- 
+        Classes added as part of SENSE features.
+    -->
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService -->
+    
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#ContainerService -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ContainerService">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#VirtualFunction -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualFunction">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:Class>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#type -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#type">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#NetworkObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#value -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#value">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#NetworkObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#tag -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#tag">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#order -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#order">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAddress -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAddress">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress"/>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#routeTo -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#routeTo">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#routeFrom -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#routeFrom">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#nextHop -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#nextHop">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAddress"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesVPC -->
+    <!--  Modeling a relationship to provide Virtual Private Cloud  (AWS etc.). -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesVPC">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#VirtualCloudService"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Topology"/>
+    </owl:ObjectProperty>
+    
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesVM -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesVM">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorService"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Node"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesContainer -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesContainer">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#ContainerService"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Node"/>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesVNic -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesVNic">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#Port"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#PortGroup"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/03/base#BidirectionalPort"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasRoute -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasRoute">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasFlow -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasFlow">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Flow"/>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesVolume -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesVolume">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BlockStorageService"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Volume"/>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasVolume -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasVolume">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Volume"/>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesBucket -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesBucket">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#ObjectStorageService"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Bucket"/>
+    </owl:ObjectProperty>    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasBucket -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasBucket">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Bucket"/>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesBenchmark -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesBenchmark">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#IOPerformanceMeasurementService"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/12/topology#POSIX_IOBenchmark"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/12/topology#S3_IOBenchmark"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesSubnet -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesSubnet">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#SwitchingService"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#SwitchingSubnet"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesRoute -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesRoute">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#RoutingService"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesRoutingTable -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesRoutingTable">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#RoutingService"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#RoutingTable"/>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesFlowTable -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesFlowTable">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#OpenflowService"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#FlowTable"/>
+    </owl:ObjectProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesFlow -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesFlow">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#FlowTable"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Flow"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providedByService -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providedByService">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasBenchmark -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasBenchmark">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#BlockStorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ObjectStorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Volume"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Bucket"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#POSIX_IOBenchmark"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#S3_IOBenchmark"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesService -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesService">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+    </owl:ObjectProperty>        
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasFileSystem -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasFileSystem">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#FileSystem"/>
+    </owl:ObjectProperty>  
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasTransfer -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasTransfer">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Service"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#DataTransfer"/>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesTransfer -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesTransfer">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#DataTransferService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#DataTransferClusterService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+     <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#DataTransfer"/>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasBatch -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasBatch">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Batch"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#flowMatch -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#flowMatch">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Flow"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#FlowRule"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#flowAction -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#flowAction">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Flow"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#FlowRule"/>
+    </owl:ObjectProperty>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#prefix">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Address"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#localAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#localAddress">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#RoutingService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#capacity">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#capability -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#capability">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#measurement -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#measurement">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#line_rate_kbps -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#line_rate_kbps">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#average_rate_kbps -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#average_rate_kbps">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#peak_rate_kbps -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#peak_rate_kbps">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#burst_size_byte -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#burst_size_byte">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#latency_usec -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#latency_usec">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#num_core -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#num_core">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#StorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#BlockStorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ObjectStorageService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#memory_mb -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#memory_mb">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#StorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#BlockStorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ObjectStorageService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#disk_gb -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#disk_gb">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#StorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#BlockStorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ObjectStorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Volume"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Bucket"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#disk_free_gb -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#disk_free_gb">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#StorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#BlockStorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ObjectStorageService"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Volume"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Bucket"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#average_iops_4kb_read -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#average_iops_4kb_read">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#POSIX_IOBenchmark"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#S3_IOBenchmark"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#average_iops_4kb_write -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#average_iops_4kb_write">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#POSIX_IOBenchmark"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#S3_IOBenchmark"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#maximum_iops_4kb_read -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#maximum_iops_4kb_read">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#POSIX_IOBenchmark"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#S3_IOBenchmark"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#maximum_iops_4kb_write -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#maximum_iops_4kb_write">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#POSIX_IOBenchmark"/>
+                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#S3_IOBenchmark"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#average_iops_8kb_read -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#average_iops_8kb_write -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#maximum_iops_8kb_read -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#maximum_iops_8kb_write -->
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#average_iops_16kb_read -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#average_iops_16kb_write -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#maximum_iops_16kb_read -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#maximum_iops_16kb_write -->
+    
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#average_iops_64kb_read -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#average_iops_64kb_write -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#maximum_iops_64kb_read -->
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#maximum_iops_64kb_write -->
+
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#target_device -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#target_device">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Volume"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#mount_point -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#mount_point">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#FileSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#maximum_object_size -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#maximum_object_size">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Bucket"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#batch_rule -->
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#batch_rule">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#Batch"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+    <!-- 
+        DatatypeProperty added as part of SENSE features.
+    -->
+
+    <!-- reservableCapacity - The maximum reservable bandwidth on a port for a single service. -->
+    
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#reservableCapacity">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+    <!-- granularity - The granularity of bandwidth increments for a requested service. -->
+    
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#granularity">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+    <!-- availableCapacity - The total remaining capacity on the port. -->
+    
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#availableCapacity">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+    <!-- maximumCapacity - The total capacity of the port. -->
+    
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#maximumCapacity">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+    <!-- unit - The unit of measure providing context to the bandwidth related attributes. -->
+    
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#unit">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:List>
+                        <rdf:first>bps</rdf:first>
+                        <rdf:rest>
+                            <rdf:List>
+                                <rdf:first>mbps</rdf:first>
+                                <rdf:rest>
+                                    <rdf:List>
+                                        <rdf:first>gbps</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:List>
+                                </rdf:rest>
+                            </rdf:List>
+                        </rdf:rest>
+                    </rdf:List>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>    
+    
+    <!-- priority - Bandwidth Service priority -->
+    
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#priority">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+     <!-- qosClass - Bandwidth Service QoS class -->
+    
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#qosClass">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+</rdf:RDF>
+
+
+
