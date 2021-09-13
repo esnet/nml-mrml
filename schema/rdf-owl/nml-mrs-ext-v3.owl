@@ -288,6 +288,13 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:ObjectProperty>
     
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAttribute">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#NetworkAttribute"/>
+    </owl:ObjectProperty>
+
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAddress -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#hasNetworkAddress">
