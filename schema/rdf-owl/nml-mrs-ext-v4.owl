@@ -302,6 +302,14 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
 
+
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#default_value -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#defaul_value">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#NetworkObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#tag -->
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#tag">
