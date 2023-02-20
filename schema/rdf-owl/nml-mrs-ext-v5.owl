@@ -642,27 +642,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#prefix">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Address"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#Route"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#localAddress -->
-
-    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#localAddress">
-        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#RoutingService"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-
-
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#capacity -->
 
     <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#capacity">
@@ -683,86 +662,6 @@
         <rdfs:domain rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
-
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#line_rate_kbps -->
-
-    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#line_rate_kbps">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
-    </owl:DatatypeProperty>
-    
-
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#average_rate_kbps -->
-
-    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#average_rate_kbps">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
-    </owl:DatatypeProperty>
-
-
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#peak_rate_kbps -->
-
-    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#peak_rate_kbps">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
-    </owl:DatatypeProperty>
-
-
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#burst_size_byte -->
-
-    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#burst_size_byte">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
-    </owl:DatatypeProperty>
-
-
-    <!-- http://schemas.ogf.org/mrs/2013/12/topology#latency_usec -->
-
-    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#latency_usec">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#VirtualSwitchService"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#HypervisorBypassInterfaceService"/>
-                    <rdf:Description rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ClusterNetworkService"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
-    </owl:DatatypeProperty>
-
 
 
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#num_core -->
