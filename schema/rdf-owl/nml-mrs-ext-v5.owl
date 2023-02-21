@@ -490,8 +490,8 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/12/topology#POSIX_IOBenchmark"/>
-                     <owl:Class rdf:about="http://schemas.ogf.org/nml/2013/12/topology#S3_IOBenchmark"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#POSIX_IOBenchmark"/>
+                     <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#S3_IOBenchmark"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
