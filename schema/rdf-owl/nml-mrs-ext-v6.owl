@@ -866,7 +866,14 @@
         <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     </owl:DatatypeProperty>
+
+    <!-- minimumCapacity - The minimum reservable andwidth for a requested service. -->
     
+    <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#minimumCapacity">
+        <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#BandwidthService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+        
     <!-- availableCapacity - The total remaining capacity on the port. -->
     
     <owl:DatatypeProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#availableCapacity">
