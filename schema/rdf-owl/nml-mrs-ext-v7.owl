@@ -199,6 +199,11 @@
         <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
     </owl:Class>
 
+    <!-- http://schemas.ogf.org/mrs/2013/12/topology#ComputeJob -->
+
+    <owl:Class rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#ComputeJob">
+        <rdfs:subClassOf rdf:resource="http://schemas.ogf.org/nml/2013/03/base#NetworkObject"/>
+    </owl:Class>
 
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#POSIX_IOBenchmark -->
 
@@ -440,7 +445,7 @@
 
     <owl:ObjectProperty rdf:about="http://schemas.ogf.org/mrs/2013/12/topology#providesContainer">
         <rdfs:domain rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#ContainerService"/>
-        <rdfs:range rdf:resource="http://schemas.ogf.org/nml/2013/03/base#Node"/>
+        <rdfs:range rdf:resource="http://schemas.ogf.org/mrs/2013/12/topology#ComputeJob"/>
     </owl:ObjectProperty>
 
     <!-- http://schemas.ogf.org/mrs/2013/12/topology#providesVNic -->
